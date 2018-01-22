@@ -98,12 +98,12 @@ sf = Softmax(fc.output_shape)
 
 
 for epoch in range(20):
-    if epoch < 10:
-        learning_rate = 0.000002
-    elif epoch < 15:
-        learning_rate = 0.0000002
+    if epoch < 5:
+        learning_rate = 0.00001
+    elif epoch < 10:
+        learning_rate = 0.000001
     else:
-        learning_rate = 0.00000002
+        learning_rate = 0.0000001
 
     batch_loss = 0
     batch_acc = 0
