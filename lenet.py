@@ -37,8 +37,8 @@ def load_mnist(path, kind='train'):
     return images, labels
 
 
-images, labels = load_mnist('./data')
-test_images, test_labels = load_mnist('./data', 't10k')
+images, labels = load_mnist('./data/mnist')
+test_images, test_labels = load_mnist('./data/mnist', 't10k')
 
 # img = images[0].reshape([1,28,28,1])
 # # plt.imshow(img[0,:,:,0])
@@ -97,13 +97,20 @@ fc = FullyConnect(pool2.output_shape, 10)
 sf = Softmax(fc.output_shape)
 
 
+# train_loss_record = []
+# train_acc_record = []
+# val_loss_record = []
+# val_acc_record = []
+
 for epoch in range(20):
-    if epoch < 5:
-        learning_rate = 0.00001
-    elif epoch < 10:
-        learning_rate = 0.000001
-    else:
-        learning_rate = 0.0000001
+    # if epoch < 5:
+    #     learning_rate = 0.00001
+    # elif epoch < 10:
+    #     learning_rate = 0.000001
+    # else:
+    #     learning_rate = 0.0000001
+
+    learning_rate = 1e-5
 
     batch_loss = 0
     batch_acc = 0
@@ -147,6 +154,7 @@ for epoch in range(20):
                                                                                                  i, batch_acc / float(
                           batch_size), batch_loss / batch_size, learning_rate)
 
+
             batch_loss = 0
             batch_acc = 0
 
@@ -154,6 +162,7 @@ for epoch in range(20):
     print time.strftime("%Y-%m-%d %H:%M:%S",
                             time.localtime()) + "  epoch: %5d , train_acc: %.4f  avg_train_loss: %.4f" % (
             epoch, train_acc / float(images.shape[0]), train_loss / images.shape[0])
+
     # validation
     for i in range(test_images.shape[0] / batch_size):
         img = test_images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
@@ -171,3 +180,4 @@ for epoch in range(20):
 
     print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "  epoch: %5d , val_acc: %.4f  avg_val_loss: %.4f" % (
         epoch, val_acc / float(test_images.shape[0]), val_loss / test_images.shape[0])
+

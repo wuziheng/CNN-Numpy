@@ -114,7 +114,6 @@ def im2col(image, ksize, stride):
     return image_col
 
 
-
 if __name__ == "__main__":
     # img = np.random.standard_normal((2, 32, 32, 3))
     img = np.ones((1, 32, 32, 3))
