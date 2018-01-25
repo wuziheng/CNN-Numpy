@@ -3,17 +3,17 @@ from Variable import Variable, GLOBAL_VARIABLE_SCOPE
 
 
 class Operator(object):
-    def __init__(self, name, input_variables=Variable or list, output_variables=Variable or list):
+    def __init__(self, name, input_variables, output_variables):
         
         # init input check
         if GLOBAL_VARIABLE_SCOPE.has_key(name):
-            raise "Operator %s has exists !"%name
+            raise Exception("Operator %s has exists !"%name)
         
         if not isinstance(input_variables, Variable) and not isinstance(input_variables[0], Variable):
-            raise "Operator %s 's input_variables is not instance(or list) of Variable!"
+            raise Exception("Operator %s 's input_variables is not instance(or list) of Variable!")
 
         if not isinstance(output_variables, Variable) and not isinstance(output_variables[0], Variable):
-            raise "Operator %s 's output_variables is not instance(or list) of Variable!"
+            raise Exception("Operator %s 's output_variables is not instance(or list) of Variable!")
 
         # register in GLOBAL_OP_SCOPE
         self.name = name
@@ -56,16 +56,16 @@ class Operator(object):
 
 class Conv2D(Operator):
 
-    def __init__(self, kernel_shape=list, input_variables=Variable, name=str, stride=1, padding='SAME'):
+    def __init__(self, kernel_shape=list, input_variable=Variable, name=str, stride=1, padding='SAME'):
         # kernel_shape = [ksize, ksize, input_channels, output_channels]
         for i in kernel_shape:
             if not isinstance(i, int):
                 raise Exception("Operator Conv2D name: %s kernel shape is not list of int" % self.name)
 
-        if not isinstance(input_variables, Variable):
+        if not isinstance(input_variable, Variable):
             raise Exception("Operator Conv2D name: %s's input_variable is not instance of Variable" % name)
 
-        if len(input_variables.shape)!=4:
+        if len(input_variable.shape)!=4:
             raise Exception("Operator Conv2D name: %s's input_variable's shape != 4d Variable!" % name)
 
         self.ksize = kernel_shape[0]
@@ -74,13 +74,19 @@ class Conv2D(Operator):
         self.padding = padding
         self.col_image = []
 
-        self.weights = Variable(kernel_shape, scope=name, name='weights')
-        self.bias = Variable([self.output_num], scope=name, name='bias')
-        self.batch_size = input_variables.shape[0]
+        self.weights = Variable(kernel_shape, scope=name, name='weights',learnable=True)
+        self.bias = Variable([self.output_num], scope=name, name='bias', learnable=True)
+        self.batch_size = input_variable.shape[0]
 
-        _output_shape = [self.batch_size, input_variables.shape[1], input_variables.shape[2], self.output_num]
+        if self.padding == 'SAME':
+            _output_shape = [self.batch_size, input_variable.shape[1] / stride, input_variable.shape[2] / stride,
+                             self.output_num]
+        if self.padding == 'VALID':
+            _output_shape = [self.batch_size, (input_variable.shape[1] - self.ksize + 1) / stride,
+                             (input_variable.shape[2] - self.ksize + 1) / stride, self.output_num]
+
         self.output_variables = Variable(_output_shape, name='out', scope=name)  # .name
-        self.input_variables = input_variables
+        self.input_variables = input_variable
         Operator.__init__(self, name, self.input_variables, self.output_variables)
 
     def forward(self):
@@ -125,7 +131,7 @@ class Conv2D(Operator):
         col_flip_weights = flip_weights.reshape([-1, weights.shape[2]])
         next_eta = np.dot(col_pad_eta, col_flip_weights)
         next_eta = np.reshape(next_eta, input.shape)
-        input.diff += next_eta
+        input.diff = next_eta
         return
 
     def _conv(self, input=Variable, output=Variable, weights=np.ndarray, bias=np.ndarray):
@@ -143,6 +149,7 @@ class Conv2D(Operator):
         # malloc tmp output_data
         conv_out = np.zeros(output.data.shape)
 
+        self.col_image = []
         # do dot for every image in batch by im2col dot col_weight
         for i in range(self.batch_size):
             img_i = batch_img[i][np.newaxis, :]
@@ -155,7 +162,187 @@ class Conv2D(Operator):
         return
 
 
-def register_graph(input_variable, output_variable, operator=Operator):
+class MaxPooling(Operator):
+    def __init__(self, ksize=2, input_variable=Variable, name=str, stride=2):
+
+        if not isinstance(input_variable, Variable):
+            raise Exception("Operator Conv2D name: %s's input_variable is not instance of Variable" % name)
+
+
+        self.ksize = ksize
+        self.stride = stride
+        self.batch_size = input_variable.shape[0]
+        self.output_channels = input_variable.shape[-1]
+        self.index = np.zeros(input_variable.shape)
+
+        self.input_variables = input_variable
+        _output_shape = [self.batch_size, input_variable.shape[2] / stride, input_variable.shape[2] / stride,
+                         self.output_channels]
+        self.output_variables = Variable(_output_shape, name='out', scope=name)
+        Operator.__init__(self, name, self.input_variables, self.output_variables)
+
+    def forward(self):
+        if self.wait_forward:
+            for parent in self.parent:
+                GLOBAL_VARIABLE_SCOPE[parent].eval()
+            self._pool()
+            self.wait_forward = False
+            return
+        else:
+            pass
+
+    def backward(self):
+        if self.wait_forward:
+            pass
+        else:
+            for child in self.child:
+                GLOBAL_VARIABLE_SCOPE[child].diff_eval()
+            self.input_variables.diff = np.repeat(np.repeat(self.output_variables.diff, self.stride, axis=1),
+                                                  self.stride, axis=2) * self.index
+            self.wait_forward = True
+            return
+
+    def _pool(self):
+        _out = np.zeros(self.output_variables.shape)
+        for b in range(self.input_variables.shape[0]):
+            for c in range(self.output_channels):
+                for i in range(0, self.input_variables.shape[1], self.stride):
+                    for j in range(0, self.input_variables.shape[2], self.stride):
+                        _out[b, i / self.stride, j / self.stride, c] = np.max(
+                            self.input_variables.data[b, i:i + self.ksize, j:j + self.ksize, c])
+                        index = np.argmax(self.input_variables.data[b, i:i + self.ksize, j:j + self.ksize, c])
+                        self.index[b, i+index/self.stride, j + index % self.stride, c] = 1
+        self.output_variables.data = _out
+        return
+
+
+class FullyConnect(Operator):
+    def __init__(self, output_num, input_variable=Variable, name=str):
+        if not isinstance(input_variable, Variable):
+            raise Exception("Operator Conv2D name: %s's input_variable is not instance of Variable" % name)
+
+        self.batch_size = input_variable.shape[0]
+        input_len = reduce(lambda x, y: x * y, input_variable.shape[1:])
+        self.output_num = output_num
+        self.weights = Variable([input_len, self.output_num], name='weights', scope=name, init='const' ,learnable=True)
+        self.bias = Variable([self.output_num], name='bias', scope=name, init='const',learnable=True)
+
+        self.output_variables = Variable([self.batch_size, self.output_num], name='out', scope=name)
+        self.input_variables = input_variable
+        Operator.__init__(self, name, self.input_variables, self.output_variables)
+
+    def forward(self):
+        if self.wait_forward:
+            for parent in self.parent:
+                GLOBAL_VARIABLE_SCOPE[parent].eval()
+            self.flatten_x = self.input_variables.data.reshape([self.batch_size, -1])
+            self.output_variables.data = np.dot(self.flatten_x, self.weights.data)+self.bias.data
+            self.wait_forward = False
+            return
+        else:
+            pass
+
+    def backward(self):
+        if self.wait_forward:
+            pass
+        else:
+            for child in self.child:
+                GLOBAL_VARIABLE_SCOPE[child].diff_eval()
+
+            for i in range(self.batch_size):
+                col_x = self.flatten_x[i][:, np.newaxis]
+                diff_i = self.output_variables.diff[i][:, np.newaxis].T
+                self.weights.diff += np.dot(col_x, diff_i)
+                self.bias.diff += diff_i.reshape(self.bias.shape)
+            next_diff = np.dot(self.output_variables.diff, self.weights.data.T)
+            self.input_variables.diff = np.reshape(next_diff, self.input_variables.shape)
+
+            self.wait_forward = True
+            return
+
+
+class Relu(Operator):
+    def __init__(self, input_variable=Variable, name=str):
+        self.input_variables = input_variable
+        self.output_variables = Variable(self.input_variables.shape, name='out', scope=name)
+        Operator.__init__(self, name, self.input_variables, self.output_variables)
+
+    def forward(self):
+        if self.wait_forward:
+            for parent in self.parent:
+                GLOBAL_VARIABLE_SCOPE[parent].eval()
+            self.output_variables.data = np.maximum(self.input_variables.data, 0)
+            self.wait_forward = False
+            return
+        else:
+            pass
+
+    def backward(self):
+        if self.wait_forward:
+            pass
+        else:
+            for child in self.child:
+                GLOBAL_VARIABLE_SCOPE[child].diff_eval()
+            self.input_variables.diff = self.output_variables.diff
+            self.output_variables.diff[self.input_variables.data < 0] = 0
+            self.wait_forward = True
+            return
+
+
+class SoftmaxLoss(Operator):
+    def __init__(self, predict = Variable, label=Variable, name=str):
+        self.batch_size = predict.shape[0]
+        self.input_variables = [predict, label]
+        self.loss = Variable([1], name='loss', scope=name, init='None')
+        self.prediction = Variable(predict.shape, name='prediction', scope=name)
+        self.softmax = np.zeros(self.prediction.shape)
+
+        self.output_variables = [self.loss, self.prediction]
+        Operator.__init__(self, name, self.input_variables, self.output_variables)
+
+    def forward(self):
+        if self.wait_forward:
+            for parent in self.parent:
+                GLOBAL_VARIABLE_SCOPE[parent].eval()
+
+            predict = self.input_variables[0].data
+            label = self.input_variables[1].data
+
+            self.prediction.data = self.predict(predict)
+
+            self.loss.data = 0
+            for i in range(self.batch_size):
+                self.loss.data += np.log(np.sum(np.exp(predict[i]))) - predict[i, label[i]]
+
+            self.wait_forward = False
+            return
+        else:
+            pass
+
+
+    def backward(self):
+        if self.wait_forward:
+            pass
+        else:
+            for child in self.child:
+                GLOBAL_VARIABLE_SCOPE[child].diff_eval()
+            self.input_variables[0].diff = self.softmax.copy()
+            for i in range(self.batch_size):
+                self.input_variables[0].diff[i, self.input_variables[1].data[i]] -= 1
+            self.wait_forward = True
+            return
+
+    def predict(self, prediction):
+        exp_prediction = np.zeros(prediction.shape)
+        self.softmax = np.zeros(prediction.shape)
+        for i in range(self.batch_size):
+            prediction[i, :] -= np.max(prediction[i, :])
+            exp_prediction[i] = np.exp(prediction[i])
+            self.softmax[i] = exp_prediction[i]/np.sum(exp_prediction[i])
+        return self.softmax
+
+
+def register_graph(input_variable, output_variable, operator):
     if isinstance(input_variable,Variable) and isinstance(output_variable, Variable):
         input_variable.child.append(operator.name)
         output_variable.parent.append(operator.name)
@@ -170,17 +357,18 @@ def register_graph(input_variable, output_variable, operator=Operator):
             operator.child.append(output.name)
 
     elif isinstance(output_variable, Variable) and len(input_variable)>1:
-        for input in input_variable:
-            input.child.append(operator.name)
+        for _input in input_variable:
+            _input.child.append(operator.name)
             output_variable.parent.append(operator.name)
-            operator.parent.append(input.name)
+            operator.parent.append(_input.name)
             operator.child.append(output_variable.name)
 
-    elif len(output_variable)>1 and len(input_variable)>1:
-        for input, output in input_variable, output_variable:
-            input.child.append(operator.name)
+    elif len(output_variable)> 1 and len(input_variable)> 1:
+        for _input in input_variable:
+            _input.child.append(operator.name)
+            operator.parent.append(_input.name)
+        for output in output_variable:
             output.parent.append(operator.name)
-            operator.parent.append(input.name)
             operator.child.append(output.name)
 
     else:
@@ -189,10 +377,13 @@ def register_graph(input_variable, output_variable, operator=Operator):
 
 def im2col(image, ksize, stride):
     # image is a 4d tensor([batchsize, width ,height, channel])
+    # print image.shape
+    # print image
     image_col = []
     for i in range(0, image.shape[1] - ksize + 1, stride):
         for j in range(0, image.shape[2] - ksize + 1, stride):
             col = image[:, i:i + ksize, j:j + ksize, :].reshape([-1])
+
             image_col.append(col)
     image_col = np.array(image_col)
 

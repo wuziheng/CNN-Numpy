@@ -16,12 +16,6 @@ def load_mnist(path, kind='train'):
     images_path = glob('./%s/%s*3-ubyte' % (path, kind))[0]
     labels_path = glob('./%s/%s*1-ubyte' % (path, kind))[0]
 
-    # labels_path = os.path.join(path,
-    #                            '%s-labels-idx1-ubyte'
-    #                            % kind)
-    # images_path = os.path.join(path,
-    #                            '%s-images-idx3-ubyte'
-    #                            % kind)
     with open(labels_path, 'rb') as lbpath:
         magic, n = struct.unpack('>II',
                                  lbpath.read(8))
@@ -110,7 +104,7 @@ for epoch in range(20):
     # else:
     #     learning_rate = 0.0000001
 
-    learning_rate = 1e-5
+    learning_rate = 1e-4
 
     batch_loss = 0
     batch_acc = 0
@@ -129,6 +123,7 @@ for epoch in range(20):
         pool2_out = pool2.forward(conv2_out)
         fc_out = fc.forward(pool2_out)
         # print i, 'fc_out', fc_out
+        print 'loss:', sf.cal_loss(fc_out, np.array(label))
         batch_loss += sf.cal_loss(fc_out, np.array(label))
         train_loss += sf.cal_loss(fc_out, np.array(label))
 

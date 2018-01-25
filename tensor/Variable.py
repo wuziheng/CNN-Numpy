@@ -8,7 +8,7 @@ if 'GLOBAL_VARIABLE_SCOPE' not in globals():
 
 class Variable(object):
 
-    def __init__(self, shape=list, name=str, scope='', grad=True, init='MSRA'):
+    def __init__(self, shape=list, name=str, scope='', grad=True, learnable=False, init='MSRA'):
         if scope != '':
             self.scope = scope if scope[-1] == '/' else scope + '/'
             self.name = self.scope + name
@@ -33,6 +33,7 @@ class Variable(object):
         if grad:
             self.diff = np.zeros(self.shape)
             self.wait_bp = True
+            self.learnable = learnable
 
     def eval(self):
         for operator in self.parent:
@@ -49,6 +50,13 @@ class Variable(object):
             pass
 
         return self.diff
+
+    def apply_gradient(self, learning_rate=float, decay_rate=float):
+        self.data *= (1-decay_rate)
+        self.data -= learning_rate*self.diff
+        self.diff *= 0
+
+
 
 
 def get_by_name(name):

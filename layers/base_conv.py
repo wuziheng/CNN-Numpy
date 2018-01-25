@@ -46,6 +46,7 @@ class Conv2D(object):
         for i in range(self.batchsize):
             img_i = x[i][np.newaxis, :]
             self.col_image_i = im2col(img_i, self.ksize, self.stride)
+            #print self.col_image_i.shape
             conv_out[i] = np.reshape(np.dot(self.col_image_i, col_weights) + self.bias, self.eta[0].shape)
             self.col_image.append(self.col_image_i)
 

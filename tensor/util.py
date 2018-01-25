@@ -3,6 +3,9 @@ import math
 
 
 def initializer(shape, method):
+    if method == 'const':
+        return np.random.standard_normal(shape) / 100
+
     if method == 'None':
         return np.zeros(shape)
 
