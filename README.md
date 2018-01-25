@@ -17,7 +17,7 @@
 
 
 
-<img src="fig/iteration.jpg" style="zoom:80%"/>
+<img src="fig/iteration.jpg" style="zoom:60%"/>
 
 |   version    | validation_acc | train_acc | inferencetime(ms/pf) |
 | :----------: | :------------: | :-------: | :------------------: |
@@ -25,8 +25,20 @@
 
 
 
-**2018.01.23**
+**2018.01.24**
 
 ------
 
-*Target2*: 　实现data与layer的分离：
+*Target2*: 　实现Variable与Operator分离设计：
+
+* 完成Variable与Operator 类的设计与graph的注册功能，GLOBAL_VARIABLE_SCOPE作为全局所有Variable,Operator的索引(graph)，Operator,Variable类自己维护自己的child,parent列表。
+* 完成Conv2D类的设计，对比上一版本进行测试通过。
+
+
+
+**2018.01.25**
+
+------
+
+* 继续完成其他基本组件的Operator改写。
+
