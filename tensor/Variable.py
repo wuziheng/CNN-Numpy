@@ -7,7 +7,6 @@ if 'GLOBAL_VARIABLE_SCOPE' not in globals():
 
 
 class Variable(object):
-
     def __init__(self, shape=list, name=str, scope='', grad=True, learnable=False, init='MSRA'):
         if scope != '':
             self.scope = scope if scope[-1] == '/' else scope + '/'
@@ -51,12 +50,12 @@ class Variable(object):
 
         return self.diff
 
-    def apply_gradient(self, learning_rate=float, decay_rate=float):
-        self.data *= (1-decay_rate)
+    def apply_gradient(self, learning_rate=float, decay_rate=float, method='SGD'):
+        self.data *= (1 - decay_rate)
+        if method == 'SGD':
+            learning_rate = learning_rate
         self.data -= learning_rate*self.diff
         self.diff *= 0
-
-
 
 
 def get_by_name(name):

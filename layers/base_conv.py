@@ -49,7 +49,6 @@ class Conv2D(object):
             #print self.col_image_i.shape
             conv_out[i] = np.reshape(np.dot(self.col_image_i, col_weights) + self.bias, self.eta[0].shape)
             self.col_image.append(self.col_image_i)
-
         self.col_image = np.array(self.col_image)
         return conv_out
 

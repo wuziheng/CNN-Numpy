@@ -1,11 +1,14 @@
 import numpy as np
 import tensor.Variable as var
 import tensor.Operator as op
+import plot
 
 import time
 import struct
 from glob import glob
+import os
 
+VERSION = 'TENSOR_SGD_RELU'
 
 def load_mnist(path, kind='train'):
     """Load MNIST data from `path`"""
@@ -52,6 +55,13 @@ sf = op.SoftmaxLoss(prediction, label_placeholder, 'sf')
 images, labels = load_mnist('./data/mnist')
 test_images, test_labels = load_mnist('./data/mnist', 't10k')
 
+# save train curve config
+loss_collect = []
+acc_collect = []
+if not os.path.exists('fig/%s'%VERSION):
+    os.mkdir('fig/%s'%VERSION)
+savepath = 'fig/%s'%VERSION
+
 
 for epoch in range(20):
     learning_rate = 1e-5
@@ -72,7 +82,8 @@ for epoch in range(20):
 
         # forward
         _loss = sf.loss.eval()
-        _prediction = sf.softmax
+        _prediction = sf.prediction.eval()
+
         batch_loss += _loss
         train_loss += _loss
 
@@ -98,18 +109,33 @@ for epoch in range(20):
                                                                                                  i, batch_acc / float(
                           batch_size), batch_loss / batch_size, learning_rate)
 
+        loss_collect.append(batch_loss/float(batch_size))
+        acc_collect.append(batch_acc / float(batch_size))
+
         batch_loss = 0
         batch_acc = 0
 
 
     print time.strftime("%Y-%m-%d %H:%M:%S",
                             time.localtime()) + "  epoch: %5d , train_acc: %.4f  avg_train_loss: %.4f" % (
-            epoch, train_acc / float(images.shape[0]), train_loss / images.shape[0])
+            epoch, train_acc / float(int(images.shape[0]/batch_size)*batch_size), train_loss / images.shape[0])
+
+
+    # save train_collection fig
+    plot.saveplot(loss_collect, 'loss', '%s/EPOCH%2d_%s.jpg' % (savepath, epoch, 'loss'))
+    plot.saveplot(acc_collect, 'acc', '%s/EPOCH%2d_%s.jpg' % (savepath, epoch, 'acc'))
 
     # validation
     for i in range(test_images.shape[0] / batch_size):
         img_placeholder.data = test_images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
         label_placeholder.data = test_labels[i * batch_size:(i + 1) * batch_size]
+
+        for k in var.GLOBAL_VARIABLE_SCOPE:
+            s = var.GLOBAL_VARIABLE_SCOPE[k]
+            if isinstance(s, var.Variable):
+                s.wait_bp = False
+            if isinstance(s, op.Operator):
+                s.wait_forward = True
 
         _loss = sf.loss.eval()
         _prediction = sf.prediction.eval()
@@ -121,4 +147,4 @@ for epoch in range(20):
                 val_acc += 1
 
     print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "  epoch: %5d , val_acc: %.4f  avg_val_loss: %.4f" % (
-        epoch, val_acc / float(test_images.shape[0]), val_loss / test_images.shape[0])
+        epoch, val_acc / float(int(test_images.shape[0]/batch_size)*batch_size), val_loss / test_images.shape[0])

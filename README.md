@@ -40,5 +40,10 @@
 
 ------
 
-* 完成其他基本组件的Operator改写,新版本的mnist训练。
+* 完成其他基本组件的Operator改写
+* 新版本的mnist，基于graph的模型正向反向传播计算。
+
+|      version      | validation_acc | train_acc | inferencetime(ms/pf) |
+| :---------------: | :------------: | :-------: | :------------------: |
+| **graph_version** |     96.82%     |  97.11%   |       2(ms/pf)       |
 
