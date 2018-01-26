@@ -2,14 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def saveplot(collection, title ,savename, moving_alpha = 0.9):
+def saveplot(collection, title, savename, moving_alpha = 0.9):
     x = np.arange(0, len(collection)-1)
     collection = [collection[i]*moving_alpha+collection[i+1]*(1-moving_alpha) for i in range(len(collection)-1)]
-    plt.plot(x,collection)
+    plt.plot(x, collection)
     plt.title('%s - iteration curve'%title)
     plt.xlabel('iteration')
     plt.ylabel(title)
     plt.savefig(savename)
+    plt.close('all')
     return
 
 if __name__ == "__main__":
