@@ -74,6 +74,6 @@
 
 <center>
 
-<img src="fig/activation-loss1.jpg" style="zoom:45%"/><img src="fig/activation-loss2.jpg" style="zoom:45%"/>
+<img src="fig/activation-loss1.jpg" style="zoom:20%"/>  <img src="fig/activation-loss2.jpg" style="zoom:20%"/>
 
 </center>
