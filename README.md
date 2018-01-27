@@ -39,6 +39,8 @@
 * 完成Conv2D类的设计，对比上一版本进行测试通过。
 
 
+~
+
 
 
 **2018.01.25**
@@ -47,6 +49,8 @@
 
 * 完成其他基本组件的Operator改写。新版本支持隐式构建graph，调用converge（汇） Variable.eval()自动完成前向传播计算；调用对应的source(源)Variable.diff_eval()自动完成反向传播与导数计算；对于learnable的Variable，手动调用Variable.apply_gradient()完成梯度下降。（未来目标把上述操作封转到显示的graph 或者session类中）
 
+
+~
 
 
 
@@ -57,9 +61,7 @@
 * 给train_epoch读入图片添加了shuffle
 * 完成了不同的激活函数relu,leaky-relu,sigmoid,tanh,elu, prelu
 * 完成了对激活函数的grad_check,实际上sigmoid确实容易出现gradient-vanish,所以一开始用1e-5学习率基本收敛的特别慢，所以实际测试里面调整到了1e-3
-* 初始化默认为init='MSRA', 实际上没有做仔细的调整，最终的结果上比较性并不是特别强，但是我们可以明显发现sigmoid和tanh的计算速度要慢一些，同时我们将给出前100个iteration的loss曲线，我们可以发现，收敛速度上的差别。即使sigmoid,tanh使用了较大的learning_rate,依然收敛的慢一些。
-
-<center>
+* 初始化默认为init='MSRA', method和lr上没有做仔细的调整，最终的结果上比较性并不是特别强，但是我们可以明显发现sigmoid和tanh的计算速度要慢一些.relu系：50个batch的耗时1min13s左右。sigmoid系：1min30s左右，详细可以参考log，里面有准确的时间记录，都是同时在服务器上跑的。应该不存在资源上太大的区别。
 
 | version                    | validation_acc | train_acc | learning_rate | epoch（max=20） |
 | :------------------------- | :------------: | :-------: | :-----------: | :-----------: |
@@ -70,10 +72,21 @@
 | **SGD_TANH**               |     96.41%     |  91.12%   |   1e-3~1e-4   |       2       |
 | **SGD_ELU**                |     97.74%     |  97.26%   |     1e-5      |      13       |
 
-</center>
+~
+
+
+
+**2018.01.26**
+
+------
+
+由于我们没有精调参数，所以这里就不分析比较准确率曲线，我们就分析不同激活函数的收敛速度：
+
+1. 左图可以看到tanh,sigmoid即使采用了更大的学习率，在收敛速度上依然比relu要慢不少
+2. 右图我们可以看到，这么多种relu,在收敛速度上，没有质的区别，即使是不同alpha的leak-relu，区别也不大。但是我们还是可以勉强认为leaky-relu稍微比relu强一些。
 
 <center>
 
-<img src="fig/activation-loss1.jpg" style="zoom:20%"/>  <img src="fig/activation-loss2.jpg" style="zoom:20%"/>
+<img src="fig/activation-loss1.jpg" style="zoom:100%"/>  <img src="fig/activation-loss2.jpg" style="zoom:100%"/>
 
 </center>

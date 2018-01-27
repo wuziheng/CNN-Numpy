@@ -30,7 +30,8 @@ if __name__ == "__main__":
     print filelist
     moving_alpha = 0.8
 
-    plt.figure()
+    plt.figure(figsize=(4,3))
+
 
     for file in filelist:
         name = file.split('/')[-1].split('.')[0]
@@ -50,13 +51,13 @@ if __name__ == "__main__":
         acc = acc[0:50]
         acc = [acc[i] * moving_alpha + acc[i + 1] * (1 - moving_alpha) for i in
                       range(len(acc) - 1)]
-        x = range(0,len(acc))
-        plt.plot(x,acc,label=name)
+        x = range(0,len(loss))
+        plt.plot(x,loss,label=name)
 
     plt.xlabel('iteration(50batch)')
-    plt.ylabel('acc')
+    plt.ylabel('loss')
     plt.ylim(0,1)
-    plt.title('acc-iteration curve (moving_alpha=%.2f)'%moving_alpha)
-    plt.legend(loc='lower right')
-    plt.savefig('fig/activation-acc2.jpg')
+    plt.title('loss-iteration curve')
+    plt.legend(loc='upper right')
+    plt.savefig('fig/activation-loss1.jpg',dpi=100)
     plt.show()
