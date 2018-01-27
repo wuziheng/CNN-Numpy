@@ -1,0 +1,401 @@
+2018-01-26 16:21:43  epoch: 0 ,  batch:    50 , avg_batch_acc: 0.8281  avg_batch_loss: 0.6133  learning_rate 0.000010
+2018-01-26 16:22:58  epoch: 0 ,  batch:   100 , avg_batch_acc: 0.8594  avg_batch_loss: 0.5091  learning_rate 0.000010
+2018-01-26 16:24:10  epoch: 0 ,  batch:   150 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2776  learning_rate 0.000010
+2018-01-26 16:25:25  epoch: 0 ,  batch:   200 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2351  learning_rate 0.000010
+2018-01-26 16:26:41  epoch: 0 ,  batch:   250 , avg_batch_acc: 0.8438  avg_batch_loss: 0.4869  learning_rate 0.000010
+2018-01-26 16:27:54  epoch: 0 ,  batch:   300 , avg_batch_acc: 0.8906  avg_batch_loss: 0.2551  learning_rate 0.000010
+2018-01-26 16:29:10  epoch: 0 ,  batch:   350 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1580  learning_rate 0.000010
+2018-01-26 16:30:26  epoch: 0 ,  batch:   400 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1225  learning_rate 0.000010
+2018-01-26 16:31:38  epoch: 0 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1473  learning_rate 0.000010
+2018-01-26 16:32:48  epoch: 0 ,  batch:   500 , avg_batch_acc: 0.8906  avg_batch_loss: 0.3400  learning_rate 0.000010
+2018-01-26 16:34:00  epoch: 0 ,  batch:   550 , avg_batch_acc: 0.9219  avg_batch_loss: 0.3232  learning_rate 0.000010
+2018-01-26 16:35:14  epoch: 0 ,  batch:   600 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1130  learning_rate 0.000010
+2018-01-26 16:36:26  epoch: 0 ,  batch:   650 , avg_batch_acc: 0.9062  avg_batch_loss: 0.3000  learning_rate 0.000010
+2018-01-26 16:37:42  epoch: 0 ,  batch:   700 , avg_batch_acc: 0.9062  avg_batch_loss: 0.3116  learning_rate 0.000010
+2018-01-26 16:38:58  epoch: 0 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1495  learning_rate 0.000010
+2018-01-26 16:40:15  epoch: 0 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1909  learning_rate 0.000010
+2018-01-26 16:41:27  epoch: 0 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1226  learning_rate 0.000010
+2018-01-26 16:42:42  epoch: 0 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1712  learning_rate 0.000010
+2018-01-26 16:43:36  epoch:     0 , train_acc: 0.9120  avg_train_loss: 0.9913
+2018-01-26 16:46:25  epoch:     0 , val_acc: 0.9489  avg_val_loss: 0.1557
+2018-01-26 16:47:39  epoch: 1 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1014  learning_rate 0.000010
+2018-01-26 16:48:51  epoch: 1 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1681  learning_rate 0.000010
+2018-01-26 16:50:05  epoch: 1 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1056  learning_rate 0.000010
+2018-01-26 16:51:23  epoch: 1 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0915  learning_rate 0.000010
+2018-01-26 16:52:43  epoch: 1 ,  batch:   250 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2321  learning_rate 0.000010
+2018-01-26 16:53:58  epoch: 1 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1525  learning_rate 0.000010
+2018-01-26 16:55:17  epoch: 1 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0843  learning_rate 0.000010
+2018-01-26 16:56:36  epoch: 1 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0465  learning_rate 0.000010
+2018-01-26 16:57:56  epoch: 1 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1347  learning_rate 0.000010
+2018-01-26 16:59:12  epoch: 1 ,  batch:   500 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1973  learning_rate 0.000010
+2018-01-26 17:00:32  epoch: 1 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1616  learning_rate 0.000010
+2018-01-26 17:01:54  epoch: 1 ,  batch:   600 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1207  learning_rate 0.000010
+2018-01-26 17:03:12  epoch: 1 ,  batch:   650 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1644  learning_rate 0.000010
+2018-01-26 17:04:29  epoch: 1 ,  batch:   700 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2264  learning_rate 0.000010
+2018-01-26 17:05:45  epoch: 1 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1354  learning_rate 0.000010
+2018-01-26 17:06:59  epoch: 1 ,  batch:   800 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1805  learning_rate 0.000010
+2018-01-26 17:08:20  epoch: 1 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1043  learning_rate 0.000010
+2018-01-26 17:09:40  epoch: 1 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1727  learning_rate 0.000010
+2018-01-26 17:10:38  epoch:     1 , train_acc: 0.9610  avg_train_loss: 0.1266
+2018-01-26 17:13:49  epoch:     1 , val_acc: 0.9606  avg_val_loss: 0.1247
+2018-01-26 17:15:09  epoch: 2 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0669  learning_rate 0.000010
+2018-01-26 17:16:24  epoch: 2 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1322  learning_rate 0.000010
+2018-01-26 17:17:39  epoch: 2 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0977  learning_rate 0.000010
+2018-01-26 17:18:56  epoch: 2 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0962  learning_rate 0.000010
+2018-01-26 17:20:16  epoch: 2 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1854  learning_rate 0.000010
+2018-01-26 17:21:32  epoch: 2 ,  batch:   300 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1811  learning_rate 0.000010
+2018-01-26 17:22:56  epoch: 2 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0832  learning_rate 0.000010
+2018-01-26 17:24:13  epoch: 2 ,  batch:   400 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0480  learning_rate 0.000010
+2018-01-26 17:25:34  epoch: 2 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1283  learning_rate 0.000010
+2018-01-26 17:26:52  epoch: 2 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1702  learning_rate 0.000010
+2018-01-26 17:28:10  epoch: 2 ,  batch:   550 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1464  learning_rate 0.000010
+2018-01-26 17:29:30  epoch: 2 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0989  learning_rate 0.000010
+2018-01-26 17:30:50  epoch: 2 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1218  learning_rate 0.000010
+2018-01-26 17:32:16  epoch: 2 ,  batch:   700 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2122  learning_rate 0.000010
+2018-01-26 17:33:39  epoch: 2 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1144  learning_rate 0.000010
+2018-01-26 17:34:59  epoch: 2 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1476  learning_rate 0.000010
+2018-01-26 17:36:21  epoch: 2 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0696  learning_rate 0.000010
+2018-01-26 17:37:40  epoch: 2 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1998  learning_rate 0.000010
+2018-01-26 17:38:37  epoch:     2 , train_acc: 0.9652  avg_train_loss: 0.1191
+2018-01-26 17:41:50  epoch:     2 , val_acc: 0.9614  avg_val_loss: 0.1273
+2018-01-26 17:43:13  epoch: 3 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0763  learning_rate 0.000010
+2018-01-26 17:44:35  epoch: 3 ,  batch:   100 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1188  learning_rate 0.000010
+2018-01-26 17:45:55  epoch: 3 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1154  learning_rate 0.000010
+2018-01-26 17:47:16  epoch: 3 ,  batch:   200 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1130  learning_rate 0.000010
+2018-01-26 17:48:40  epoch: 3 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1602  learning_rate 0.000010
+2018-01-26 17:50:02  epoch: 3 ,  batch:   300 , avg_batch_acc: 0.9688  avg_batch_loss: 0.2041  learning_rate 0.000010
+2018-01-26 17:51:21  epoch: 3 ,  batch:   350 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0970  learning_rate 0.000010
+2018-01-26 17:52:40  epoch: 3 ,  batch:   400 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0440  learning_rate 0.000010
+2018-01-26 17:54:04  epoch: 3 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1218  learning_rate 0.000010
+2018-01-26 17:55:21  epoch: 3 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1583  learning_rate 0.000010
+2018-01-26 17:56:40  epoch: 3 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1429  learning_rate 0.000010
+2018-01-26 17:58:02  epoch: 3 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0939  learning_rate 0.000010
+2018-01-26 17:59:24  epoch: 3 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1097  learning_rate 0.000010
+2018-01-26 18:00:42  epoch: 3 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1661  learning_rate 0.000010
+2018-01-26 18:02:06  epoch: 3 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1046  learning_rate 0.000010
+2018-01-26 18:03:28  epoch: 3 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1494  learning_rate 0.000010
+2018-01-26 18:04:52  epoch: 3 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0598  learning_rate 0.000010
+2018-01-26 18:06:12  epoch: 3 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1839  learning_rate 0.000010
+2018-01-26 18:07:10  epoch:     3 , train_acc: 0.9667  avg_train_loss: 0.1163
+2018-01-26 18:10:21  epoch:     3 , val_acc: 0.9620  avg_val_loss: 0.1258
+2018-01-26 18:11:45  epoch: 4 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0659  learning_rate 0.000010
+2018-01-26 18:13:05  epoch: 4 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1041  learning_rate 0.000010
+2018-01-26 18:14:26  epoch: 4 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1173  learning_rate 0.000010
+2018-01-26 18:15:50  epoch: 4 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0977  learning_rate 0.000010
+2018-01-26 18:17:12  epoch: 4 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1635  learning_rate 0.000010
+2018-01-26 18:18:35  epoch: 4 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.2156  learning_rate 0.000010
+2018-01-26 18:19:59  epoch: 4 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0956  learning_rate 0.000010
+2018-01-26 18:21:17  epoch: 4 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0433  learning_rate 0.000010
+2018-01-26 18:22:39  epoch: 4 ,  batch:   450 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1179  learning_rate 0.000010
+2018-01-26 18:24:02  epoch: 4 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1452  learning_rate 0.000010
+2018-01-26 18:25:26  epoch: 4 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1398  learning_rate 0.000010
+2018-01-26 18:26:47  epoch: 4 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1064  learning_rate 0.000010
+2018-01-26 18:28:03  epoch: 4 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1089  learning_rate 0.000010
+2018-01-26 18:29:24  epoch: 4 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1366  learning_rate 0.000010
+2018-01-26 18:30:47  epoch: 4 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1155  learning_rate 0.000010
+2018-01-26 18:32:09  epoch: 4 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1507  learning_rate 0.000010
+2018-01-26 18:33:28  epoch: 4 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0570  learning_rate 0.000010
+2018-01-26 18:34:50  epoch: 4 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1809  learning_rate 0.000010
+2018-01-26 18:35:44  epoch:     4 , train_acc: 0.9680  avg_train_loss: 0.1139
+2018-01-26 18:38:56  epoch:     4 , val_acc: 0.9630  avg_val_loss: 0.1193
+2018-01-26 18:40:16  epoch: 5 ,  batch:    50 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0595  learning_rate 0.000010
+2018-01-26 18:41:35  epoch: 5 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0990  learning_rate 0.000010
+2018-01-26 18:42:57  epoch: 5 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1171  learning_rate 0.000010
+2018-01-26 18:44:20  epoch: 5 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0878  learning_rate 0.000010
+2018-01-26 18:45:40  epoch: 5 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1642  learning_rate 0.000010
+2018-01-26 18:47:02  epoch: 5 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1972  learning_rate 0.000010
+2018-01-26 18:48:24  epoch: 5 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0942  learning_rate 0.000010
+2018-01-26 18:49:47  epoch: 5 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0440  learning_rate 0.000010
+2018-01-26 18:51:10  epoch: 5 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1155  learning_rate 0.000010
+2018-01-26 18:52:31  epoch: 5 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1294  learning_rate 0.000010
+2018-01-26 18:53:53  epoch: 5 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1433  learning_rate 0.000010
+2018-01-26 18:55:12  epoch: 5 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1090  learning_rate 0.000010
+2018-01-26 18:56:33  epoch: 5 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1137  learning_rate 0.000010
+2018-01-26 18:57:53  epoch: 5 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1291  learning_rate 0.000010
+2018-01-26 18:59:13  epoch: 5 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1319  learning_rate 0.000010
+2018-01-26 19:00:37  epoch: 5 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1634  learning_rate 0.000010
+2018-01-26 19:01:56  epoch: 5 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0603  learning_rate 0.000010
+2018-01-26 19:03:19  epoch: 5 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1763  learning_rate 0.000010
+2018-01-26 19:04:19  epoch:     5 , train_acc: 0.9680  avg_train_loss: 0.1137
+2018-01-26 19:07:36  epoch:     5 , val_acc: 0.9629  avg_val_loss: 0.1171
+2018-01-26 19:08:59  epoch: 6 ,  batch:    50 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0556  learning_rate 0.000010
+2018-01-26 19:10:20  epoch: 6 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1024  learning_rate 0.000010
+2018-01-26 19:11:37  epoch: 6 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1139  learning_rate 0.000010
+2018-01-26 19:12:55  epoch: 6 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0841  learning_rate 0.000010
+2018-01-26 19:14:15  epoch: 6 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1631  learning_rate 0.000010
+2018-01-26 19:15:37  epoch: 6 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1807  learning_rate 0.000010
+2018-01-26 19:16:57  epoch: 6 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0917  learning_rate 0.000010
+2018-01-26 19:18:21  epoch: 6 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0468  learning_rate 0.000010
+2018-01-26 19:19:43  epoch: 6 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1156  learning_rate 0.000010
+2018-01-26 19:21:01  epoch: 6 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1176  learning_rate 0.000010
+2018-01-26 19:22:25  epoch: 6 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1468  learning_rate 0.000010
+2018-01-26 19:23:46  epoch: 6 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1085  learning_rate 0.000010
+2018-01-26 19:25:06  epoch: 6 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1176  learning_rate 0.000010
+2018-01-26 19:26:28  epoch: 6 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1293  learning_rate 0.000010
+2018-01-26 19:27:45  epoch: 6 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1407  learning_rate 0.000010
+2018-01-26 19:29:05  epoch: 6 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1759  learning_rate 0.000010
+2018-01-26 19:30:24  epoch: 6 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0649  learning_rate 0.000010
+2018-01-26 19:31:45  epoch: 6 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1840  learning_rate 0.000010
+2018-01-26 19:32:44  epoch:     6 , train_acc: 0.9680  avg_train_loss: 0.1144
+2018-01-26 19:35:57  epoch:     6 , val_acc: 0.9631  avg_val_loss: 0.1194
+2018-01-26 19:37:13  epoch: 7 ,  batch:    50 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0575  learning_rate 0.000010
+2018-01-26 19:38:33  epoch: 7 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1104  learning_rate 0.000010
+2018-01-26 19:39:53  epoch: 7 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1109  learning_rate 0.000010
+2018-01-26 19:41:09  epoch: 7 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0848  learning_rate 0.000010
+2018-01-26 19:42:31  epoch: 7 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1668  learning_rate 0.000010
+2018-01-26 19:43:51  epoch: 7 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1705  learning_rate 0.000010
+2018-01-26 19:45:08  epoch: 7 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0886  learning_rate 0.000010
+2018-01-26 19:46:27  epoch: 7 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0484  learning_rate 0.000010
+2018-01-26 19:47:46  epoch: 7 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1157  learning_rate 0.000010
+2018-01-26 19:49:02  epoch: 7 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1122  learning_rate 0.000010
+2018-01-26 19:50:15  epoch: 7 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1490  learning_rate 0.000010
+2018-01-26 19:51:32  epoch: 7 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1074  learning_rate 0.000010
+2018-01-26 19:52:44  epoch: 7 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1242  learning_rate 0.000010
+2018-01-26 19:53:57  epoch: 7 ,  batch:   700 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1318  learning_rate 0.000010
+2018-01-26 19:55:16  epoch: 7 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1389  learning_rate 0.000010
+2018-01-26 19:56:26  epoch: 7 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1883  learning_rate 0.000010
+2018-01-26 19:57:37  epoch: 7 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0678  learning_rate 0.000010
+2018-01-26 19:58:56  epoch: 7 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1881  learning_rate 0.000010
+2018-01-26 19:59:53  epoch:     7 , train_acc: 0.9684  avg_train_loss: 0.1145
+2018-01-26 20:02:48  epoch:     7 , val_acc: 0.9628  avg_val_loss: 0.1207
+2018-01-26 20:04:03  epoch: 8 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0589  learning_rate 0.000010
+2018-01-26 20:05:19  epoch: 8 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1214  learning_rate 0.000010
+2018-01-26 20:06:32  epoch: 8 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1086  learning_rate 0.000010
+2018-01-26 20:07:50  epoch: 8 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0854  learning_rate 0.000010
+2018-01-26 20:09:09  epoch: 8 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1728  learning_rate 0.000010
+2018-01-26 20:10:28  epoch: 8 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1698  learning_rate 0.000010
+2018-01-26 20:11:46  epoch: 8 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0822  learning_rate 0.000010
+2018-01-26 20:13:04  epoch: 8 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0507  learning_rate 0.000010
+2018-01-26 20:14:18  epoch: 8 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1211  learning_rate 0.000010
+2018-01-26 20:15:37  epoch: 8 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1063  learning_rate 0.000010
+2018-01-26 20:16:53  epoch: 8 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1503  learning_rate 0.000010
+2018-01-26 20:18:10  epoch: 8 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1105  learning_rate 0.000010
+2018-01-26 20:19:24  epoch: 8 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1316  learning_rate 0.000010
+2018-01-26 20:20:41  epoch: 8 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1349  learning_rate 0.000010
+2018-01-26 20:21:57  epoch: 8 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1359  learning_rate 0.000010
+2018-01-26 20:23:16  epoch: 8 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1913  learning_rate 0.000010
+2018-01-26 20:24:36  epoch: 8 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0685  learning_rate 0.000010
+2018-01-26 20:25:51  epoch: 8 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1885  learning_rate 0.000010
+2018-01-26 20:26:44  epoch:     8 , train_acc: 0.9684  avg_train_loss: 0.1140
+2018-01-26 20:29:42  epoch:     8 , val_acc: 0.9635  avg_val_loss: 0.1204
+2018-01-26 20:30:57  epoch: 9 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0618  learning_rate 0.000010
+2018-01-26 20:32:16  epoch: 9 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1292  learning_rate 0.000010
+2018-01-26 20:33:38  epoch: 9 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1097  learning_rate 0.000010
+2018-01-26 20:34:55  epoch: 9 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0886  learning_rate 0.000010
+2018-01-26 20:36:17  epoch: 9 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1802  learning_rate 0.000010
+2018-01-26 20:37:35  epoch: 9 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1736  learning_rate 0.000010
+2018-01-26 20:38:55  epoch: 9 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0774  learning_rate 0.000010
+2018-01-26 20:40:14  epoch: 9 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0535  learning_rate 0.000010
+2018-01-26 20:41:30  epoch: 9 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1258  learning_rate 0.000010
+2018-01-26 20:42:48  epoch: 9 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1001  learning_rate 0.000010
+2018-01-26 20:44:06  epoch: 9 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1490  learning_rate 0.000010
+2018-01-26 20:45:26  epoch: 9 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1185  learning_rate 0.000010
+2018-01-26 20:46:42  epoch: 9 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1397  learning_rate 0.000010
+2018-01-26 20:47:56  epoch: 9 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1367  learning_rate 0.000010
+2018-01-26 20:49:10  epoch: 9 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1356  learning_rate 0.000010
+2018-01-26 20:50:25  epoch: 9 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1968  learning_rate 0.000010
+2018-01-26 20:51:40  epoch: 9 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0681  learning_rate 0.000010
+2018-01-26 20:52:57  epoch: 9 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1912  learning_rate 0.000010
+2018-01-26 20:53:52  epoch:     9 , train_acc: 0.9685  avg_train_loss: 0.1145
+2018-01-26 20:56:50  epoch:     9 , val_acc: 0.9636  avg_val_loss: 0.1206
+2018-01-26 20:58:09  epoch: 10 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0666  learning_rate 0.000010
+2018-01-26 20:59:28  epoch: 10 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1291  learning_rate 0.000010
+2018-01-26 21:00:51  epoch: 10 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1094  learning_rate 0.000010
+2018-01-26 21:02:09  epoch: 10 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0932  learning_rate 0.000010
+2018-01-26 21:03:27  epoch: 10 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1902  learning_rate 0.000010
+2018-01-26 21:04:48  epoch: 10 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1824  learning_rate 0.000010
+2018-01-26 21:06:06  epoch: 10 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0741  learning_rate 0.000010
+2018-01-26 21:07:25  epoch: 10 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0546  learning_rate 0.000010
+2018-01-26 21:08:46  epoch: 10 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1265  learning_rate 0.000010
+2018-01-26 21:10:06  epoch: 10 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0964  learning_rate 0.000010
+2018-01-26 21:11:28  epoch: 10 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1431  learning_rate 0.000010
+2018-01-26 21:12:49  epoch: 10 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1241  learning_rate 0.000010
+2018-01-26 21:14:10  epoch: 10 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1431  learning_rate 0.000010
+2018-01-26 21:15:31  epoch: 10 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1357  learning_rate 0.000010
+2018-01-26 21:16:51  epoch: 10 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1299  learning_rate 0.000010
+2018-01-26 21:18:09  epoch: 10 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2026  learning_rate 0.000010
+2018-01-26 21:19:29  epoch: 10 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0636  learning_rate 0.000010
+2018-01-26 21:20:45  epoch: 10 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1964  learning_rate 0.000010
+2018-01-26 21:21:42  epoch:    10 , train_acc: 0.9682  avg_train_loss: 0.1148
+2018-01-26 21:24:46  epoch:    10 , val_acc: 0.9642  avg_val_loss: 0.1204
+2018-01-26 21:26:03  epoch: 11 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0698  learning_rate 0.000010
+2018-01-26 21:27:17  epoch: 11 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1285  learning_rate 0.000010
+2018-01-26 21:28:35  epoch: 11 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1074  learning_rate 0.000010
+2018-01-26 21:29:56  epoch: 11 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0932  learning_rate 0.000010
+2018-01-26 21:31:16  epoch: 11 ,  batch:   250 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1923  learning_rate 0.000010
+2018-01-26 21:32:35  epoch: 11 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1922  learning_rate 0.000010
+2018-01-26 21:33:53  epoch: 11 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0733  learning_rate 0.000010
+2018-01-26 21:35:09  epoch: 11 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0546  learning_rate 0.000010
+2018-01-26 21:36:31  epoch: 11 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1243  learning_rate 0.000010
+2018-01-26 21:37:52  epoch: 11 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0922  learning_rate 0.000010
+2018-01-26 21:39:17  epoch: 11 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1424  learning_rate 0.000010
+2018-01-26 21:40:42  epoch: 11 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1277  learning_rate 0.000010
+2018-01-26 21:42:06  epoch: 11 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1420  learning_rate 0.000010
+2018-01-26 21:43:27  epoch: 11 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1357  learning_rate 0.000010
+2018-01-26 21:44:49  epoch: 11 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1251  learning_rate 0.000010
+2018-01-26 21:46:11  epoch: 11 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2085  learning_rate 0.000010
+2018-01-26 21:47:36  epoch: 11 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0601  learning_rate 0.000010
+2018-01-26 21:48:58  epoch: 11 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2015  learning_rate 0.000010
+2018-01-26 21:49:57  epoch:    11 , train_acc: 0.9683  avg_train_loss: 0.1143
+2018-01-26 21:53:10  epoch:    11 , val_acc: 0.9626  avg_val_loss: 0.1221
+2018-01-26 21:54:29  epoch: 12 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0709  learning_rate 0.000010
+2018-01-26 21:55:50  epoch: 12 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1270  learning_rate 0.000010
+2018-01-26 21:57:11  epoch: 12 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1062  learning_rate 0.000010
+2018-01-26 21:58:31  epoch: 12 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0957  learning_rate 0.000010
+2018-01-26 21:59:50  epoch: 12 ,  batch:   250 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1914  learning_rate 0.000010
+2018-01-26 22:01:08  epoch: 12 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1962  learning_rate 0.000010
+2018-01-26 22:02:30  epoch: 12 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0731  learning_rate 0.000010
+2018-01-26 22:03:53  epoch: 12 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0552  learning_rate 0.000010
+2018-01-26 22:05:12  epoch: 12 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1213  learning_rate 0.000010
+2018-01-26 22:06:38  epoch: 12 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0902  learning_rate 0.000010
+2018-01-26 22:07:56  epoch: 12 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1415  learning_rate 0.000010
+2018-01-26 22:09:17  epoch: 12 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1282  learning_rate 0.000010
+2018-01-26 22:10:36  epoch: 12 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1415  learning_rate 0.000010
+2018-01-26 22:11:58  epoch: 12 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1340  learning_rate 0.000010
+2018-01-26 22:13:21  epoch: 12 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1195  learning_rate 0.000010
+2018-01-26 22:14:39  epoch: 12 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2125  learning_rate 0.000010
+2018-01-26 22:16:01  epoch: 12 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0587  learning_rate 0.000010
+2018-01-26 22:17:24  epoch: 12 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2049  learning_rate 0.000010
+2018-01-26 22:18:21  epoch:    12 , train_acc: 0.9683  avg_train_loss: 0.1136
+2018-01-26 22:21:33  epoch:    12 , val_acc: 0.9632  avg_val_loss: 0.1226
+2018-01-26 22:22:52  epoch: 13 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0718  learning_rate 0.000010
+2018-01-26 22:24:15  epoch: 13 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1251  learning_rate 0.000010
+2018-01-26 22:25:35  epoch: 13 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1071  learning_rate 0.000010
+2018-01-26 22:26:59  epoch: 13 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0971  learning_rate 0.000010
+2018-01-26 22:28:21  epoch: 13 ,  batch:   250 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1908  learning_rate 0.000010
+2018-01-26 22:29:42  epoch: 13 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1954  learning_rate 0.000010
+2018-01-26 22:31:04  epoch: 13 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0735  learning_rate 0.000010
+2018-01-26 22:32:27  epoch: 13 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0545  learning_rate 0.000010
+2018-01-26 22:33:50  epoch: 13 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1185  learning_rate 0.000010
+2018-01-26 22:35:13  epoch: 13 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0891  learning_rate 0.000010
+2018-01-26 22:36:37  epoch: 13 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1427  learning_rate 0.000010
+2018-01-26 22:38:02  epoch: 13 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1270  learning_rate 0.000010
+2018-01-26 22:39:25  epoch: 13 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1417  learning_rate 0.000010
+2018-01-26 22:40:47  epoch: 13 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1342  learning_rate 0.000010
+2018-01-26 22:42:09  epoch: 13 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1150  learning_rate 0.000010
+2018-01-26 22:43:33  epoch: 13 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2122  learning_rate 0.000010
+2018-01-26 22:44:55  epoch: 13 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0583  learning_rate 0.000010
+2018-01-26 22:46:21  epoch: 13 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2063  learning_rate 0.000010
+2018-01-26 22:47:20  epoch:    13 , train_acc: 0.9688  avg_train_loss: 0.1129
+2018-01-26 22:50:37  epoch:    13 , val_acc: 0.9636  avg_val_loss: 0.1222
+2018-01-26 22:51:58  epoch: 14 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0729  learning_rate 0.000010
+2018-01-26 22:53:13  epoch: 14 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1241  learning_rate 0.000010
+2018-01-26 22:54:31  epoch: 14 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1092  learning_rate 0.000010
+2018-01-26 22:55:51  epoch: 14 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0992  learning_rate 0.000010
+2018-01-26 22:57:15  epoch: 14 ,  batch:   250 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1919  learning_rate 0.000010
+2018-01-26 22:58:38  epoch: 14 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1920  learning_rate 0.000010
+2018-01-26 23:00:00  epoch: 14 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0741  learning_rate 0.000010
+2018-01-26 23:01:23  epoch: 14 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0550  learning_rate 0.000010
+2018-01-26 23:02:44  epoch: 14 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1162  learning_rate 0.000010
+2018-01-26 23:04:05  epoch: 14 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0899  learning_rate 0.000010
+2018-01-26 23:05:28  epoch: 14 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1438  learning_rate 0.000010
+2018-01-26 23:06:51  epoch: 14 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1250  learning_rate 0.000010
+2018-01-26 23:08:15  epoch: 14 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1426  learning_rate 0.000010
+2018-01-26 23:09:37  epoch: 14 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1344  learning_rate 0.000010
+2018-01-26 23:11:01  epoch: 14 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1131  learning_rate 0.000010
+2018-01-26 23:12:25  epoch: 14 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2104  learning_rate 0.000010
+2018-01-26 23:13:47  epoch: 14 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0586  learning_rate 0.000010
+2018-01-26 23:15:08  epoch: 14 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2068  learning_rate 0.000010
+2018-01-26 23:16:08  epoch:    14 , train_acc: 0.9691  avg_train_loss: 0.1126
+2018-01-26 23:19:27  epoch:    14 , val_acc: 0.9642  avg_val_loss: 0.1209
+2018-01-26 23:20:49  epoch: 15 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0738  learning_rate 0.000010
+2018-01-26 23:22:09  epoch: 15 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1240  learning_rate 0.000010
+2018-01-26 23:23:27  epoch: 15 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1123  learning_rate 0.000010
+2018-01-26 23:24:50  epoch: 15 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1014  learning_rate 0.000010
+2018-01-26 23:26:13  epoch: 15 ,  batch:   250 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1936  learning_rate 0.000010
+2018-01-26 23:27:34  epoch: 15 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1895  learning_rate 0.000010
+2018-01-26 23:28:57  epoch: 15 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0747  learning_rate 0.000010
+2018-01-26 23:30:21  epoch: 15 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0560  learning_rate 0.000010
+2018-01-26 23:31:45  epoch: 15 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1148  learning_rate 0.000010
+2018-01-26 23:33:04  epoch: 15 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0911  learning_rate 0.000010
+2018-01-26 23:34:23  epoch: 15 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1448  learning_rate 0.000010
+2018-01-26 23:35:48  epoch: 15 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1241  learning_rate 0.000010
+2018-01-26 23:37:13  epoch: 15 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1439  learning_rate 0.000010
+2018-01-26 23:38:33  epoch: 15 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1364  learning_rate 0.000010
+2018-01-26 23:39:57  epoch: 15 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1123  learning_rate 0.000010
+2018-01-26 23:41:21  epoch: 15 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2093  learning_rate 0.000010
+2018-01-26 23:42:47  epoch: 15 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0596  learning_rate 0.000010
+2018-01-26 23:44:11  epoch: 15 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2073  learning_rate 0.000010
+2018-01-26 23:45:10  epoch:    15 , train_acc: 0.9693  avg_train_loss: 0.1127
+2018-01-26 23:48:24  epoch:    15 , val_acc: 0.9644  avg_val_loss: 0.1201
+2018-01-26 23:49:46  epoch: 16 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0747  learning_rate 0.000010
+2018-01-26 23:51:10  epoch: 16 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1247  learning_rate 0.000010
+2018-01-26 23:52:34  epoch: 16 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1143  learning_rate 0.000010
+2018-01-26 23:53:55  epoch: 16 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1034  learning_rate 0.000010
+2018-01-26 23:55:15  epoch: 16 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1948  learning_rate 0.000010
+2018-01-26 23:56:38  epoch: 16 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1856  learning_rate 0.000010
+2018-01-26 23:58:01  epoch: 16 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0751  learning_rate 0.000010
+2018-01-26 23:59:24  epoch: 16 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0574  learning_rate 0.000010
+2018-01-27 00:00:47  epoch: 16 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1136  learning_rate 0.000010
+2018-01-27 00:02:10  epoch: 16 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0931  learning_rate 0.000010
+2018-01-27 00:03:29  epoch: 16 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1459  learning_rate 0.000010
+2018-01-27 00:04:52  epoch: 16 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1231  learning_rate 0.000010
+2018-01-27 00:06:18  epoch: 16 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1451  learning_rate 0.000010
+2018-01-27 00:07:39  epoch: 16 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1392  learning_rate 0.000010
+2018-01-27 00:09:03  epoch: 16 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1110  learning_rate 0.000010
+2018-01-27 00:10:27  epoch: 16 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2077  learning_rate 0.000010
+2018-01-27 00:11:53  epoch: 16 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0607  learning_rate 0.000010
+2018-01-27 00:13:17  epoch: 16 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2072  learning_rate 0.000010
+2018-01-27 00:14:15  epoch:    16 , train_acc: 0.9697  avg_train_loss: 0.1128
+2018-01-27 00:17:35  epoch:    16 , val_acc: 0.9647  avg_val_loss: 0.1198
+2018-01-27 00:18:59  epoch: 17 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0745  learning_rate 0.000010
+2018-01-27 00:20:22  epoch: 17 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1256  learning_rate 0.000010
+2018-01-27 00:21:45  epoch: 17 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1148  learning_rate 0.000010
+2018-01-27 00:23:11  epoch: 17 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1052  learning_rate 0.000010
+2018-01-27 00:24:33  epoch: 17 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1960  learning_rate 0.000010
+2018-01-27 00:25:53  epoch: 17 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1824  learning_rate 0.000010
+2018-01-27 00:27:16  epoch: 17 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0752  learning_rate 0.000010
+2018-01-27 00:28:41  epoch: 17 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0583  learning_rate 0.000010
+2018-01-27 00:30:06  epoch: 17 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1120  learning_rate 0.000010
+2018-01-27 00:31:29  epoch: 17 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0948  learning_rate 0.000010
+2018-01-27 00:32:50  epoch: 17 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1462  learning_rate 0.000010
+2018-01-27 00:34:14  epoch: 17 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1231  learning_rate 0.000010
+2018-01-27 00:35:37  epoch: 17 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1462  learning_rate 0.000010
+2018-01-27 00:36:57  epoch: 17 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1438  learning_rate 0.000010
+2018-01-27 00:38:26  epoch: 17 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1096  learning_rate 0.000010
+2018-01-27 00:39:50  epoch: 17 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2055  learning_rate 0.000010
+2018-01-27 00:41:14  epoch: 17 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0618  learning_rate 0.000010
+2018-01-27 00:42:40  epoch: 17 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2073  learning_rate 0.000010
+2018-01-27 00:43:41  epoch:    17 , train_acc: 0.9697  avg_train_loss: 0.1129
+2018-01-27 00:47:03  epoch:    17 , val_acc: 0.9648  avg_val_loss: 0.1195
+2018-01-27 00:48:23  epoch: 18 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0744  learning_rate 0.000010
+2018-01-27 00:49:48  epoch: 18 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1257  learning_rate 0.000010
+2018-01-27 00:51:11  epoch: 18 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1145  learning_rate 0.000010
+2018-01-27 00:52:32  epoch: 18 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1072  learning_rate 0.000010
+2018-01-27 00:53:54  epoch: 18 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1961  learning_rate 0.000010
+2018-01-27 00:55:15  epoch: 18 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1788  learning_rate 0.000010
+2018-01-27 00:56:35  epoch: 18 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0755  learning_rate 0.000010
+2018-01-27 00:57:55  epoch: 18 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0579  learning_rate 0.000010
+2018-01-27 00:59:17  epoch: 18 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1106  learning_rate 0.000010
+2018-01-27 01:00:39  epoch: 18 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0968  learning_rate 0.000010
+2018-01-27 01:02:04  epoch: 18 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1452  learning_rate 0.000010
+2018-01-27 01:03:26  epoch: 18 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1230  learning_rate 0.000010
+2018-01-27 01:04:49  epoch: 18 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1464  learning_rate 0.000010
+2018-01-27 01:06:15  epoch: 18 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1502  learning_rate 0.000010
+2018-01-27 01:07:35  epoch: 18 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1073  learning_rate 0.000010
+2018-01-27 01:08:57  epoch: 18 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2027  learning_rate 0.000010
+2018-01-27 01:10:22  epoch: 18 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0630  learning_rate 0.000010
+2018-01-27 01:11:49  epoch: 18 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2073  learning_rate 0.000010
+2018-01-27 01:12:49  epoch:    18 , train_acc: 0.9697  avg_train_loss: 0.1129
+2018-01-27 01:16:09  epoch:    18 , val_acc: 0.9659  avg_val_loss: 0.1189
+2018-01-27 01:17:29  epoch: 19 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0743  learning_rate 0.000010
+2018-01-27 01:18:52  epoch: 19 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1264  learning_rate 0.000010
+2018-01-27 01:20:16  epoch: 19 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1149  learning_rate 0.000010
+2018-01-27 01:21:39  epoch: 19 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1097  learning_rate 0.000010
+2018-01-27 01:23:01  epoch: 19 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1964  learning_rate 0.000010
+2018-01-27 01:24:26  epoch: 19 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1771  learning_rate 0.000010
+2018-01-27 01:25:50  epoch: 19 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0753  learning_rate 0.000010
+2018-01-27 01:27:12  epoch: 19 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0575  learning_rate 0.000010
+2018-01-27 01:28:35  epoch: 19 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1072  learning_rate 0.000010
+2018-01-27 01:29:59  epoch: 19 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0990  learning_rate 0.000010
+2018-01-27 01:31:20  epoch: 19 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1446  learning_rate 0.000010
+2018-01-27 01:32:41  epoch: 19 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1242  learning_rate 0.000010
+2018-01-27 01:34:02  epoch: 19 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1456  learning_rate 0.000010
+2018-01-27 01:35:25  epoch: 19 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1574  learning_rate 0.000010
+2018-01-27 01:36:48  epoch: 19 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1040  learning_rate 0.000010
+2018-01-27 01:38:09  epoch: 19 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2007  learning_rate 0.000010
+2018-01-27 01:39:27  epoch: 19 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0641  learning_rate 0.000010
+2018-01-27 01:40:48  epoch: 19 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2077  learning_rate 0.000010
+2018-01-27 01:41:48  epoch:    19 , train_acc: 0.9698  avg_train_loss: 0.1129
+2018-01-27 01:44:58  epoch:    19 , val_acc: 0.9657  avg_val_loss: 0.1181
+

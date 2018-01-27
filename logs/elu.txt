@@ -1,0 +1,400 @@
+2018-01-26 21:40:43  TENSOR_SGD_ELU epoch: 0 ,  batch:    50 , avg_batch_acc: 0.8750  avg_batch_loss: 0.3751  learning_rate 0.000010
+2018-01-26 21:42:04  TENSOR_SGD_ELU epoch: 0 ,  batch:   100 , avg_batch_acc: 0.8750  avg_batch_loss: 0.4229  learning_rate 0.000010
+2018-01-26 21:43:28  TENSOR_SGD_ELU epoch: 0 ,  batch:   150 , avg_batch_acc: 0.8594  avg_batch_loss: 0.4355  learning_rate 0.000010
+2018-01-26 21:44:50  TENSOR_SGD_ELU epoch: 0 ,  batch:   200 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1784  learning_rate 0.000010
+2018-01-26 21:46:14  TENSOR_SGD_ELU epoch: 0 ,  batch:   250 , avg_batch_acc: 0.9219  avg_batch_loss: 0.2051  learning_rate 0.000010
+2018-01-26 21:47:36  TENSOR_SGD_ELU epoch: 0 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2205  learning_rate 0.000010
+2018-01-26 21:48:59  TENSOR_SGD_ELU epoch: 0 ,  batch:   350 , avg_batch_acc: 0.9062  avg_batch_loss: 0.3340  learning_rate 0.000010
+2018-01-26 21:50:24  TENSOR_SGD_ELU epoch: 0 ,  batch:   400 , avg_batch_acc: 0.9062  avg_batch_loss: 0.4505  learning_rate 0.000010
+2018-01-26 21:51:54  TENSOR_SGD_ELU epoch: 0 ,  batch:   450 , avg_batch_acc: 0.9219  avg_batch_loss: 0.2137  learning_rate 0.000010
+2018-01-26 21:53:22  TENSOR_SGD_ELU epoch: 0 ,  batch:   500 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1843  learning_rate 0.000010
+2018-01-26 21:54:46  TENSOR_SGD_ELU epoch: 0 ,  batch:   550 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0697  learning_rate 0.000010
+2018-01-26 21:56:07  TENSOR_SGD_ELU epoch: 0 ,  batch:   600 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1518  learning_rate 0.000010
+2018-01-26 21:57:33  TENSOR_SGD_ELU epoch: 0 ,  batch:   650 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2620  learning_rate 0.000010
+2018-01-26 21:58:56  TENSOR_SGD_ELU epoch: 0 ,  batch:   700 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1745  learning_rate 0.000010
+2018-01-26 22:00:19  TENSOR_SGD_ELU epoch: 0 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1167  learning_rate 0.000010
+2018-01-26 22:01:43  TENSOR_SGD_ELU epoch: 0 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1629  learning_rate 0.000010
+2018-01-26 22:03:10  TENSOR_SGD_ELU epoch: 0 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0949  learning_rate 0.000010
+2018-01-26 22:04:44  TENSOR_SGD_ELU epoch: 0 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1310  learning_rate 0.000010
+2018-01-26 22:05:48  epoch:     0 , train_acc: 0.9163  avg_train_loss: 0.7727
+2018-01-26 22:09:33  epoch:     0 , val_acc: 0.9570  avg_val_loss: 0.1371
+2018-01-26 22:10:52  TENSOR_SGD_ELU epoch: 1 ,  batch:    50 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2499  learning_rate 0.000010
+2018-01-26 22:12:14  TENSOR_SGD_ELU epoch: 1 ,  batch:   100 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0701  learning_rate 0.000010
+2018-01-26 22:13:33  TENSOR_SGD_ELU epoch: 1 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1345  learning_rate 0.000010
+2018-01-26 22:14:57  TENSOR_SGD_ELU epoch: 1 ,  batch:   200 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2128  learning_rate 0.000010
+2018-01-26 22:16:30  TENSOR_SGD_ELU epoch: 1 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0823  learning_rate 0.000010
+2018-01-26 22:18:03  TENSOR_SGD_ELU epoch: 1 ,  batch:   300 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0849  learning_rate 0.000010
+2018-01-26 22:19:24  TENSOR_SGD_ELU epoch: 1 ,  batch:   350 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1561  learning_rate 0.000010
+2018-01-26 22:20:49  TENSOR_SGD_ELU epoch: 1 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1011  learning_rate 0.000010
+2018-01-26 22:22:20  TENSOR_SGD_ELU epoch: 1 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.2261  learning_rate 0.000010
+2018-01-26 22:23:40  TENSOR_SGD_ELU epoch: 1 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0709  learning_rate 0.000010
+2018-01-26 22:24:59  TENSOR_SGD_ELU epoch: 1 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1030  learning_rate 0.000010
+2018-01-26 22:26:19  TENSOR_SGD_ELU epoch: 1 ,  batch:   600 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1376  learning_rate 0.000010
+2018-01-26 22:27:40  TENSOR_SGD_ELU epoch: 1 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1025  learning_rate 0.000010
+2018-01-26 22:29:03  TENSOR_SGD_ELU epoch: 1 ,  batch:   700 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1858  learning_rate 0.000010
+2018-01-26 22:30:22  TENSOR_SGD_ELU epoch: 1 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0905  learning_rate 0.000010
+2018-01-26 22:31:40  TENSOR_SGD_ELU epoch: 1 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1079  learning_rate 0.000010
+2018-01-26 22:32:57  TENSOR_SGD_ELU epoch: 1 ,  batch:   850 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1819  learning_rate 0.000010
+2018-01-26 22:34:14  TENSOR_SGD_ELU epoch: 1 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0747  learning_rate 0.000010
+2018-01-26 22:35:12  epoch:     1 , train_acc: 0.9607  avg_train_loss: 0.1311
+2018-01-26 22:38:43  epoch:     1 , val_acc: 0.9709  avg_val_loss: 0.1045
+2018-01-26 22:40:02  TENSOR_SGD_ELU epoch: 2 ,  batch:    50 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1558  learning_rate 0.000010
+2018-01-26 22:41:21  TENSOR_SGD_ELU epoch: 2 ,  batch:   100 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0687  learning_rate 0.000010
+2018-01-26 22:42:40  TENSOR_SGD_ELU epoch: 2 ,  batch:   150 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0370  learning_rate 0.000010
+2018-01-26 22:43:59  TENSOR_SGD_ELU epoch: 2 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1239  learning_rate 0.000010
+2018-01-26 22:45:17  TENSOR_SGD_ELU epoch: 2 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0542  learning_rate 0.000010
+2018-01-26 22:46:37  TENSOR_SGD_ELU epoch: 2 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1137  learning_rate 0.000010
+2018-01-26 22:47:55  TENSOR_SGD_ELU epoch: 2 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0741  learning_rate 0.000010
+2018-01-26 22:49:14  TENSOR_SGD_ELU epoch: 2 ,  batch:   400 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1557  learning_rate 0.000010
+2018-01-26 22:50:33  TENSOR_SGD_ELU epoch: 2 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0854  learning_rate 0.000010
+2018-01-26 22:51:50  TENSOR_SGD_ELU epoch: 2 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0777  learning_rate 0.000010
+2018-01-26 22:53:09  TENSOR_SGD_ELU epoch: 2 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1366  learning_rate 0.000010
+2018-01-26 22:54:27  TENSOR_SGD_ELU epoch: 2 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1287  learning_rate 0.000010
+2018-01-26 22:55:46  TENSOR_SGD_ELU epoch: 2 ,  batch:   650 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0397  learning_rate 0.000010
+2018-01-26 22:57:04  TENSOR_SGD_ELU epoch: 2 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0686  learning_rate 0.000010
+2018-01-26 22:58:22  TENSOR_SGD_ELU epoch: 2 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0513  learning_rate 0.000010
+2018-01-26 22:59:41  TENSOR_SGD_ELU epoch: 2 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1231  learning_rate 0.000010
+2018-01-26 23:00:59  TENSOR_SGD_ELU epoch: 2 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1049  learning_rate 0.000010
+2018-01-26 23:02:18  TENSOR_SGD_ELU epoch: 2 ,  batch:   900 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0486  learning_rate 0.000010
+2018-01-26 23:03:14  epoch:     2 , train_acc: 0.9693  avg_train_loss: 0.1095
+2018-01-26 23:06:43  epoch:     2 , val_acc: 0.9729  avg_val_loss: 0.0981
+2018-01-26 23:08:01  TENSOR_SGD_ELU epoch: 3 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1182  learning_rate 0.000010
+2018-01-26 23:09:19  TENSOR_SGD_ELU epoch: 3 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1005  learning_rate 0.000010
+2018-01-26 23:10:38  TENSOR_SGD_ELU epoch: 3 ,  batch:   150 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1338  learning_rate 0.000010
+2018-01-26 23:11:57  TENSOR_SGD_ELU epoch: 3 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1253  learning_rate 0.000010
+2018-01-26 23:13:15  TENSOR_SGD_ELU epoch: 3 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1839  learning_rate 0.000010
+2018-01-26 23:14:35  TENSOR_SGD_ELU epoch: 3 ,  batch:   300 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0594  learning_rate 0.000010
+2018-01-26 23:15:54  TENSOR_SGD_ELU epoch: 3 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0928  learning_rate 0.000010
+2018-01-26 23:17:13  TENSOR_SGD_ELU epoch: 3 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0634  learning_rate 0.000010
+2018-01-26 23:18:31  TENSOR_SGD_ELU epoch: 3 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1172  learning_rate 0.000010
+2018-01-26 23:19:50  TENSOR_SGD_ELU epoch: 3 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0478  learning_rate 0.000010
+2018-01-26 23:21:09  TENSOR_SGD_ELU epoch: 3 ,  batch:   550 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0529  learning_rate 0.000010
+2018-01-26 23:22:28  TENSOR_SGD_ELU epoch: 3 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1220  learning_rate 0.000010
+2018-01-26 23:23:47  TENSOR_SGD_ELU epoch: 3 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1023  learning_rate 0.000010
+2018-01-26 23:25:05  TENSOR_SGD_ELU epoch: 3 ,  batch:   700 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0936  learning_rate 0.000010
+2018-01-26 23:26:24  TENSOR_SGD_ELU epoch: 3 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0939  learning_rate 0.000010
+2018-01-26 23:27:42  TENSOR_SGD_ELU epoch: 3 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0864  learning_rate 0.000010
+2018-01-26 23:29:01  TENSOR_SGD_ELU epoch: 3 ,  batch:   850 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1608  learning_rate 0.000010
+2018-01-26 23:30:20  TENSOR_SGD_ELU epoch: 3 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0997  learning_rate 0.000010
+2018-01-26 23:31:16  epoch:     3 , train_acc: 0.9704  avg_train_loss: 0.1066
+2018-01-26 23:34:46  epoch:     3 , val_acc: 0.9724  avg_val_loss: 0.0994
+2018-01-26 23:36:05  TENSOR_SGD_ELU epoch: 4 ,  batch:    50 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1566  learning_rate 0.000010
+2018-01-26 23:37:24  TENSOR_SGD_ELU epoch: 4 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0666  learning_rate 0.000010
+2018-01-26 23:38:42  TENSOR_SGD_ELU epoch: 4 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0645  learning_rate 0.000010
+2018-01-26 23:40:01  TENSOR_SGD_ELU epoch: 4 ,  batch:   200 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0344  learning_rate 0.000010
+2018-01-26 23:41:20  TENSOR_SGD_ELU epoch: 4 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0906  learning_rate 0.000010
+2018-01-26 23:42:38  TENSOR_SGD_ELU epoch: 4 ,  batch:   300 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0779  learning_rate 0.000010
+2018-01-26 23:43:57  TENSOR_SGD_ELU epoch: 4 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1382  learning_rate 0.000010
+2018-01-26 23:45:16  TENSOR_SGD_ELU epoch: 4 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1133  learning_rate 0.000010
+2018-01-26 23:46:34  TENSOR_SGD_ELU epoch: 4 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0424  learning_rate 0.000010
+2018-01-26 23:47:53  TENSOR_SGD_ELU epoch: 4 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1199  learning_rate 0.000010
+2018-01-26 23:49:12  TENSOR_SGD_ELU epoch: 4 ,  batch:   550 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1920  learning_rate 0.000010
+2018-01-26 23:50:31  TENSOR_SGD_ELU epoch: 4 ,  batch:   600 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0571  learning_rate 0.000010
+2018-01-26 23:51:49  TENSOR_SGD_ELU epoch: 4 ,  batch:   650 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1067  learning_rate 0.000010
+2018-01-26 23:53:08  TENSOR_SGD_ELU epoch: 4 ,  batch:   700 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0502  learning_rate 0.000010
+2018-01-26 23:54:27  TENSOR_SGD_ELU epoch: 4 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1373  learning_rate 0.000010
+2018-01-26 23:55:45  TENSOR_SGD_ELU epoch: 4 ,  batch:   800 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1878  learning_rate 0.000010
+2018-01-26 23:57:03  TENSOR_SGD_ELU epoch: 4 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1444  learning_rate 0.000010
+2018-01-26 23:58:22  TENSOR_SGD_ELU epoch: 4 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0788  learning_rate 0.000010
+2018-01-26 23:59:19  epoch:     4 , train_acc: 0.9725  avg_train_loss: 0.1044
+2018-01-27 00:02:49  epoch:     4 , val_acc: 0.9718  avg_val_loss: 0.1015
+2018-01-27 00:04:08  TENSOR_SGD_ELU epoch: 5 ,  batch:    50 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0942  learning_rate 0.000010
+2018-01-27 00:05:26  TENSOR_SGD_ELU epoch: 5 ,  batch:   100 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1697  learning_rate 0.000010
+2018-01-27 00:06:45  TENSOR_SGD_ELU epoch: 5 ,  batch:   150 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0209  learning_rate 0.000010
+2018-01-27 00:08:04  TENSOR_SGD_ELU epoch: 5 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0680  learning_rate 0.000010
+2018-01-27 00:09:23  TENSOR_SGD_ELU epoch: 5 ,  batch:   250 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0605  learning_rate 0.000010
+2018-01-27 00:10:41  TENSOR_SGD_ELU epoch: 5 ,  batch:   300 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1006  learning_rate 0.000010
+2018-01-27 00:12:01  TENSOR_SGD_ELU epoch: 5 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1226  learning_rate 0.000010
+2018-01-27 00:13:20  TENSOR_SGD_ELU epoch: 5 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1092  learning_rate 0.000010
+2018-01-27 00:14:39  TENSOR_SGD_ELU epoch: 5 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0695  learning_rate 0.000010
+2018-01-27 00:15:58  TENSOR_SGD_ELU epoch: 5 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0264  learning_rate 0.000010
+2018-01-27 00:17:17  TENSOR_SGD_ELU epoch: 5 ,  batch:   550 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0874  learning_rate 0.000010
+2018-01-27 00:18:36  TENSOR_SGD_ELU epoch: 5 ,  batch:   600 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0521  learning_rate 0.000010
+2018-01-27 00:19:55  TENSOR_SGD_ELU epoch: 5 ,  batch:   650 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1197  learning_rate 0.000010
+2018-01-27 00:21:15  TENSOR_SGD_ELU epoch: 5 ,  batch:   700 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1770  learning_rate 0.000010
+2018-01-27 00:22:33  TENSOR_SGD_ELU epoch: 5 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0936  learning_rate 0.000010
+2018-01-27 00:23:52  TENSOR_SGD_ELU epoch: 5 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0974  learning_rate 0.000010
+2018-01-27 00:25:11  TENSOR_SGD_ELU epoch: 5 ,  batch:   850 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1710  learning_rate 0.000010
+2018-01-27 00:26:31  TENSOR_SGD_ELU epoch: 5 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1591  learning_rate 0.000010
+2018-01-27 00:27:28  epoch:     5 , train_acc: 0.9721  avg_train_loss: 0.1026
+2018-01-27 00:30:57  epoch:     5 , val_acc: 0.9734  avg_val_loss: 0.0998
+2018-01-27 00:32:16  TENSOR_SGD_ELU epoch: 6 ,  batch:    50 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1210  learning_rate 0.000010
+2018-01-27 00:33:34  TENSOR_SGD_ELU epoch: 6 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1035  learning_rate 0.000010
+2018-01-27 00:34:52  TENSOR_SGD_ELU epoch: 6 ,  batch:   150 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1213  learning_rate 0.000010
+2018-01-27 00:36:11  TENSOR_SGD_ELU epoch: 6 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1134  learning_rate 0.000010
+2018-01-27 00:37:30  TENSOR_SGD_ELU epoch: 6 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1130  learning_rate 0.000010
+2018-01-27 00:38:48  TENSOR_SGD_ELU epoch: 6 ,  batch:   300 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0465  learning_rate 0.000010
+2018-01-27 00:40:07  TENSOR_SGD_ELU epoch: 6 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1155  learning_rate 0.000010
+2018-01-27 00:41:26  TENSOR_SGD_ELU epoch: 6 ,  batch:   400 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1322  learning_rate 0.000010
+2018-01-27 00:42:45  TENSOR_SGD_ELU epoch: 6 ,  batch:   450 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0735  learning_rate 0.000010
+2018-01-27 00:44:05  TENSOR_SGD_ELU epoch: 6 ,  batch:   500 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0988  learning_rate 0.000010
+2018-01-27 00:45:23  TENSOR_SGD_ELU epoch: 6 ,  batch:   550 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0701  learning_rate 0.000010
+2018-01-27 00:46:42  TENSOR_SGD_ELU epoch: 6 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1187  learning_rate 0.000010
+2018-01-27 00:48:02  TENSOR_SGD_ELU epoch: 6 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1253  learning_rate 0.000010
+2018-01-27 00:49:20  TENSOR_SGD_ELU epoch: 6 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0985  learning_rate 0.000010
+2018-01-27 00:50:38  TENSOR_SGD_ELU epoch: 6 ,  batch:   750 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1495  learning_rate 0.000010
+2018-01-27 00:51:56  TENSOR_SGD_ELU epoch: 6 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1151  learning_rate 0.000010
+2018-01-27 00:53:15  TENSOR_SGD_ELU epoch: 6 ,  batch:   850 , avg_batch_acc: 0.8906  avg_batch_loss: 0.3704  learning_rate 0.000010
+2018-01-27 00:54:34  TENSOR_SGD_ELU epoch: 6 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0763  learning_rate 0.000010
+2018-01-27 00:55:29  epoch:     6 , train_acc: 0.9721  avg_train_loss: 0.1044
+2018-01-27 00:58:58  epoch:     6 , val_acc: 0.9743  avg_val_loss: 0.0930
+2018-01-27 01:00:17  TENSOR_SGD_ELU epoch: 7 ,  batch:    50 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1627  learning_rate 0.000010
+2018-01-27 01:01:35  TENSOR_SGD_ELU epoch: 7 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0727  learning_rate 0.000010
+2018-01-27 01:02:53  TENSOR_SGD_ELU epoch: 7 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1882  learning_rate 0.000010
+2018-01-27 01:04:13  TENSOR_SGD_ELU epoch: 7 ,  batch:   200 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0732  learning_rate 0.000010
+2018-01-27 01:05:31  TENSOR_SGD_ELU epoch: 7 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1149  learning_rate 0.000010
+2018-01-27 01:06:49  TENSOR_SGD_ELU epoch: 7 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1421  learning_rate 0.000010
+2018-01-27 01:08:08  TENSOR_SGD_ELU epoch: 7 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0754  learning_rate 0.000010
+2018-01-27 01:09:27  TENSOR_SGD_ELU epoch: 7 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1066  learning_rate 0.000010
+2018-01-27 01:10:46  TENSOR_SGD_ELU epoch: 7 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1618  learning_rate 0.000010
+2018-01-27 01:12:05  TENSOR_SGD_ELU epoch: 7 ,  batch:   500 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0900  learning_rate 0.000010
+2018-01-27 01:13:24  TENSOR_SGD_ELU epoch: 7 ,  batch:   550 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1270  learning_rate 0.000010
+2018-01-27 01:14:43  TENSOR_SGD_ELU epoch: 7 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1322  learning_rate 0.000010
+2018-01-27 01:16:01  TENSOR_SGD_ELU epoch: 7 ,  batch:   650 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0494  learning_rate 0.000010
+2018-01-27 01:17:20  TENSOR_SGD_ELU epoch: 7 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1138  learning_rate 0.000010
+2018-01-27 01:18:39  TENSOR_SGD_ELU epoch: 7 ,  batch:   750 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1957  learning_rate 0.000010
+2018-01-27 01:19:57  TENSOR_SGD_ELU epoch: 7 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1220  learning_rate 0.000010
+2018-01-27 01:21:16  TENSOR_SGD_ELU epoch: 7 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0220  learning_rate 0.000010
+2018-01-27 01:22:35  TENSOR_SGD_ELU epoch: 7 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1390  learning_rate 0.000010
+2018-01-27 01:23:32  epoch:     7 , train_acc: 0.9710  avg_train_loss: 0.1055
+2018-01-27 01:27:00  epoch:     7 , val_acc: 0.9737  avg_val_loss: 0.0990
+2018-01-27 01:28:19  TENSOR_SGD_ELU epoch: 8 ,  batch:    50 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0720  learning_rate 0.000010
+2018-01-27 01:29:37  TENSOR_SGD_ELU epoch: 8 ,  batch:   100 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0615  learning_rate 0.000010
+2018-01-27 01:30:56  TENSOR_SGD_ELU epoch: 8 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1017  learning_rate 0.000010
+2018-01-27 01:32:14  TENSOR_SGD_ELU epoch: 8 ,  batch:   200 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0184  learning_rate 0.000010
+2018-01-27 01:33:32  TENSOR_SGD_ELU epoch: 8 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0538  learning_rate 0.000010
+2018-01-27 01:34:51  TENSOR_SGD_ELU epoch: 8 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1667  learning_rate 0.000010
+2018-01-27 01:36:09  TENSOR_SGD_ELU epoch: 8 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1038  learning_rate 0.000010
+2018-01-27 01:37:28  TENSOR_SGD_ELU epoch: 8 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1650  learning_rate 0.000010
+2018-01-27 01:38:46  TENSOR_SGD_ELU epoch: 8 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0676  learning_rate 0.000010
+2018-01-27 01:40:05  TENSOR_SGD_ELU epoch: 8 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1595  learning_rate 0.000010
+2018-01-27 01:41:24  TENSOR_SGD_ELU epoch: 8 ,  batch:   550 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0442  learning_rate 0.000010
+2018-01-27 01:42:43  TENSOR_SGD_ELU epoch: 8 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1478  learning_rate 0.000010
+2018-01-27 01:44:01  TENSOR_SGD_ELU epoch: 8 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0805  learning_rate 0.000010
+2018-01-27 01:45:19  TENSOR_SGD_ELU epoch: 8 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1356  learning_rate 0.000010
+2018-01-27 01:46:38  TENSOR_SGD_ELU epoch: 8 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1074  learning_rate 0.000010
+2018-01-27 01:47:57  TENSOR_SGD_ELU epoch: 8 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1249  learning_rate 0.000010
+2018-01-27 01:49:14  TENSOR_SGD_ELU epoch: 8 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0722  learning_rate 0.000010
+2018-01-27 01:50:32  TENSOR_SGD_ELU epoch: 8 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0617  learning_rate 0.000010
+2018-01-27 01:51:29  epoch:     8 , train_acc: 0.9710  avg_train_loss: 0.1047
+2018-01-27 01:54:58  epoch:     8 , val_acc: 0.9765  avg_val_loss: 0.0887
+2018-01-27 01:56:17  TENSOR_SGD_ELU epoch: 9 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0832  learning_rate 0.000010
+2018-01-27 01:57:37  TENSOR_SGD_ELU epoch: 9 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0425  learning_rate 0.000010
+2018-01-27 01:58:55  TENSOR_SGD_ELU epoch: 9 ,  batch:   150 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0408  learning_rate 0.000010
+2018-01-27 02:00:14  TENSOR_SGD_ELU epoch: 9 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1198  learning_rate 0.000010
+2018-01-27 02:01:32  TENSOR_SGD_ELU epoch: 9 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.2274  learning_rate 0.000010
+2018-01-27 02:02:50  TENSOR_SGD_ELU epoch: 9 ,  batch:   300 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0529  learning_rate 0.000010
+2018-01-27 02:04:08  TENSOR_SGD_ELU epoch: 9 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0353  learning_rate 0.000010
+2018-01-27 02:05:27  TENSOR_SGD_ELU epoch: 9 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0788  learning_rate 0.000010
+2018-01-27 02:06:45  TENSOR_SGD_ELU epoch: 9 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0831  learning_rate 0.000010
+2018-01-27 02:08:03  TENSOR_SGD_ELU epoch: 9 ,  batch:   500 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1575  learning_rate 0.000010
+2018-01-27 02:09:21  TENSOR_SGD_ELU epoch: 9 ,  batch:   550 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1204  learning_rate 0.000010
+2018-01-27 02:10:39  TENSOR_SGD_ELU epoch: 9 ,  batch:   600 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1156  learning_rate 0.000010
+2018-01-27 02:11:58  TENSOR_SGD_ELU epoch: 9 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0886  learning_rate 0.000010
+2018-01-27 02:13:17  TENSOR_SGD_ELU epoch: 9 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0637  learning_rate 0.000010
+2018-01-27 02:14:36  TENSOR_SGD_ELU epoch: 9 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1194  learning_rate 0.000010
+2018-01-27 02:15:55  TENSOR_SGD_ELU epoch: 9 ,  batch:   800 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0931  learning_rate 0.000010
+2018-01-27 02:17:13  TENSOR_SGD_ELU epoch: 9 ,  batch:   850 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0885  learning_rate 0.000010
+2018-01-27 02:18:31  TENSOR_SGD_ELU epoch: 9 ,  batch:   900 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1972  learning_rate 0.000010
+2018-01-27 02:19:28  epoch:     9 , train_acc: 0.9717  avg_train_loss: 0.1036
+2018-01-27 02:22:59  epoch:     9 , val_acc: 0.9735  avg_val_loss: 0.0920
+2018-01-27 02:24:17  TENSOR_SGD_ELU epoch: 10 ,  batch:    50 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1520  learning_rate 0.000010
+2018-01-27 02:25:36  TENSOR_SGD_ELU epoch: 10 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1256  learning_rate 0.000010
+2018-01-27 02:26:54  TENSOR_SGD_ELU epoch: 10 ,  batch:   150 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2017  learning_rate 0.000010
+2018-01-27 02:28:12  TENSOR_SGD_ELU epoch: 10 ,  batch:   200 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0518  learning_rate 0.000010
+2018-01-27 02:29:31  TENSOR_SGD_ELU epoch: 10 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1310  learning_rate 0.000010
+2018-01-27 02:30:50  TENSOR_SGD_ELU epoch: 10 ,  batch:   300 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0618  learning_rate 0.000010
+2018-01-27 02:32:09  TENSOR_SGD_ELU epoch: 10 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0343  learning_rate 0.000010
+2018-01-27 02:33:27  TENSOR_SGD_ELU epoch: 10 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.2288  learning_rate 0.000010
+2018-01-27 02:34:46  TENSOR_SGD_ELU epoch: 10 ,  batch:   450 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1720  learning_rate 0.000010
+2018-01-27 02:36:04  TENSOR_SGD_ELU epoch: 10 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0844  learning_rate 0.000010
+2018-01-27 02:37:22  TENSOR_SGD_ELU epoch: 10 ,  batch:   550 , avg_batch_acc: 0.9062  avg_batch_loss: 0.1884  learning_rate 0.000010
+2018-01-27 02:38:42  TENSOR_SGD_ELU epoch: 10 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0479  learning_rate 0.000010
+2018-01-27 02:40:00  TENSOR_SGD_ELU epoch: 10 ,  batch:   650 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0350  learning_rate 0.000010
+2018-01-27 02:41:20  TENSOR_SGD_ELU epoch: 10 ,  batch:   700 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0719  learning_rate 0.000010
+2018-01-27 02:42:38  TENSOR_SGD_ELU epoch: 10 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1033  learning_rate 0.000010
+2018-01-27 02:43:56  TENSOR_SGD_ELU epoch: 10 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1678  learning_rate 0.000010
+2018-01-27 02:45:14  TENSOR_SGD_ELU epoch: 10 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1322  learning_rate 0.000010
+2018-01-27 02:46:32  TENSOR_SGD_ELU epoch: 10 ,  batch:   900 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1709  learning_rate 0.000010
+2018-01-27 02:47:29  epoch:    10 , train_acc: 0.9727  avg_train_loss: 0.1002
+2018-01-27 02:50:59  epoch:    10 , val_acc: 0.9768  avg_val_loss: 0.0904
+2018-01-27 02:52:18  TENSOR_SGD_ELU epoch: 11 ,  batch:    50 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1486  learning_rate 0.000010
+2018-01-27 02:53:37  TENSOR_SGD_ELU epoch: 11 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0559  learning_rate 0.000010
+2018-01-27 02:54:56  TENSOR_SGD_ELU epoch: 11 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0870  learning_rate 0.000010
+2018-01-27 02:56:14  TENSOR_SGD_ELU epoch: 11 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1387  learning_rate 0.000010
+2018-01-27 02:57:33  TENSOR_SGD_ELU epoch: 11 ,  batch:   250 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0727  learning_rate 0.000010
+2018-01-27 02:58:52  TENSOR_SGD_ELU epoch: 11 ,  batch:   300 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0463  learning_rate 0.000010
+2018-01-27 03:00:11  TENSOR_SGD_ELU epoch: 11 ,  batch:   350 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1243  learning_rate 0.000010
+2018-01-27 03:01:30  TENSOR_SGD_ELU epoch: 11 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1521  learning_rate 0.000010
+2018-01-27 03:02:50  TENSOR_SGD_ELU epoch: 11 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0906  learning_rate 0.000010
+2018-01-27 03:04:09  TENSOR_SGD_ELU epoch: 11 ,  batch:   500 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0724  learning_rate 0.000010
+2018-01-27 03:05:27  TENSOR_SGD_ELU epoch: 11 ,  batch:   550 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0772  learning_rate 0.000010
+2018-01-27 03:06:46  TENSOR_SGD_ELU epoch: 11 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0754  learning_rate 0.000010
+2018-01-27 03:08:06  TENSOR_SGD_ELU epoch: 11 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1270  learning_rate 0.000010
+2018-01-27 03:09:24  TENSOR_SGD_ELU epoch: 11 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0965  learning_rate 0.000010
+2018-01-27 03:10:43  TENSOR_SGD_ELU epoch: 11 ,  batch:   750 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0439  learning_rate 0.000010
+2018-01-27 03:12:02  TENSOR_SGD_ELU epoch: 11 ,  batch:   800 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1730  learning_rate 0.000010
+2018-01-27 03:13:22  TENSOR_SGD_ELU epoch: 11 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1276  learning_rate 0.000010
+2018-01-27 03:14:41  TENSOR_SGD_ELU epoch: 11 ,  batch:   900 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0659  learning_rate 0.000010
+2018-01-27 03:15:38  epoch:    11 , train_acc: 0.9709  avg_train_loss: 0.1067
+2018-01-27 03:19:06  epoch:    11 , val_acc: 0.9758  avg_val_loss: 0.0895
+2018-01-27 03:20:24  TENSOR_SGD_ELU epoch: 12 ,  batch:    50 , avg_batch_acc: 1.0000  avg_batch_loss: 0.1072  learning_rate 0.000010
+2018-01-27 03:21:43  TENSOR_SGD_ELU epoch: 12 ,  batch:   100 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1176  learning_rate 0.000010
+2018-01-27 03:23:01  TENSOR_SGD_ELU epoch: 12 ,  batch:   150 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1605  learning_rate 0.000010
+2018-01-27 03:24:18  TENSOR_SGD_ELU epoch: 12 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1493  learning_rate 0.000010
+2018-01-27 03:25:36  TENSOR_SGD_ELU epoch: 12 ,  batch:   250 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1523  learning_rate 0.000010
+2018-01-27 03:26:55  TENSOR_SGD_ELU epoch: 12 ,  batch:   300 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0991  learning_rate 0.000010
+2018-01-27 03:28:13  TENSOR_SGD_ELU epoch: 12 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0681  learning_rate 0.000010
+2018-01-27 03:29:31  TENSOR_SGD_ELU epoch: 12 ,  batch:   400 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1071  learning_rate 0.000010
+2018-01-27 03:30:51  TENSOR_SGD_ELU epoch: 12 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1715  learning_rate 0.000010
+2018-01-27 03:32:09  TENSOR_SGD_ELU epoch: 12 ,  batch:   500 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1804  learning_rate 0.000010
+2018-01-27 03:33:28  TENSOR_SGD_ELU epoch: 12 ,  batch:   550 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1098  learning_rate 0.000010
+2018-01-27 03:34:46  TENSOR_SGD_ELU epoch: 12 ,  batch:   600 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0346  learning_rate 0.000010
+2018-01-27 03:36:04  TENSOR_SGD_ELU epoch: 12 ,  batch:   650 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0432  learning_rate 0.000010
+2018-01-27 03:37:22  TENSOR_SGD_ELU epoch: 12 ,  batch:   700 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0469  learning_rate 0.000010
+2018-01-27 03:38:42  TENSOR_SGD_ELU epoch: 12 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1530  learning_rate 0.000010
+2018-01-27 03:40:00  TENSOR_SGD_ELU epoch: 12 ,  batch:   800 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0729  learning_rate 0.000010
+2018-01-27 03:41:18  TENSOR_SGD_ELU epoch: 12 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1296  learning_rate 0.000010
+2018-01-27 03:42:36  TENSOR_SGD_ELU epoch: 12 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1373  learning_rate 0.000010
+2018-01-27 03:43:32  epoch:    12 , train_acc: 0.9731  avg_train_loss: 0.1009
+2018-01-27 03:47:03  epoch:    12 , val_acc: 0.9757  avg_val_loss: 0.0914
+2018-01-27 03:48:22  TENSOR_SGD_ELU epoch: 13 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1325  learning_rate 0.000010
+2018-01-27 03:49:40  TENSOR_SGD_ELU epoch: 13 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1908  learning_rate 0.000010
+2018-01-27 03:50:58  TENSOR_SGD_ELU epoch: 13 ,  batch:   150 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0643  learning_rate 0.000010
+2018-01-27 03:52:17  TENSOR_SGD_ELU epoch: 13 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1040  learning_rate 0.000010
+2018-01-27 03:53:35  TENSOR_SGD_ELU epoch: 13 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0807  learning_rate 0.000010
+2018-01-27 03:54:54  TENSOR_SGD_ELU epoch: 13 ,  batch:   300 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0839  learning_rate 0.000010
+2018-01-27 03:56:13  TENSOR_SGD_ELU epoch: 13 ,  batch:   350 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0754  learning_rate 0.000010
+2018-01-27 03:57:32  TENSOR_SGD_ELU epoch: 13 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0856  learning_rate 0.000010
+2018-01-27 03:58:50  TENSOR_SGD_ELU epoch: 13 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1361  learning_rate 0.000010
+2018-01-27 04:00:08  TENSOR_SGD_ELU epoch: 13 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0452  learning_rate 0.000010
+2018-01-27 04:01:26  TENSOR_SGD_ELU epoch: 13 ,  batch:   550 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1265  learning_rate 0.000010
+2018-01-27 04:02:46  TENSOR_SGD_ELU epoch: 13 ,  batch:   600 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1506  learning_rate 0.000010
+2018-01-27 04:04:05  TENSOR_SGD_ELU epoch: 13 ,  batch:   650 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0372  learning_rate 0.000010
+2018-01-27 04:05:24  TENSOR_SGD_ELU epoch: 13 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1249  learning_rate 0.000010
+2018-01-27 04:06:43  TENSOR_SGD_ELU epoch: 13 ,  batch:   750 , avg_batch_acc: 0.9531  avg_batch_loss: 0.0925  learning_rate 0.000010
+2018-01-27 04:08:02  TENSOR_SGD_ELU epoch: 13 ,  batch:   800 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1266  learning_rate 0.000010
+2018-01-27 04:09:21  TENSOR_SGD_ELU epoch: 13 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1710  learning_rate 0.000010
+2018-01-27 04:10:40  TENSOR_SGD_ELU epoch: 13 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0751  learning_rate 0.000010
+2018-01-27 04:11:36  epoch:    13 , train_acc: 0.9726  avg_train_loss: 0.1050
+2018-01-27 04:15:04  epoch:    13 , val_acc: 0.9774  avg_val_loss: 0.0874
+2018-01-27 04:16:23  TENSOR_SGD_ELU epoch: 14 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0936  learning_rate 0.000010
+2018-01-27 04:17:40  TENSOR_SGD_ELU epoch: 14 ,  batch:   100 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0724  learning_rate 0.000010
+2018-01-27 04:18:58  TENSOR_SGD_ELU epoch: 14 ,  batch:   150 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0652  learning_rate 0.000010
+2018-01-27 04:20:16  TENSOR_SGD_ELU epoch: 14 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1247  learning_rate 0.000010
+2018-01-27 04:21:35  TENSOR_SGD_ELU epoch: 14 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0944  learning_rate 0.000010
+2018-01-27 04:22:53  TENSOR_SGD_ELU epoch: 14 ,  batch:   300 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1177  learning_rate 0.000010
+2018-01-27 04:24:12  TENSOR_SGD_ELU epoch: 14 ,  batch:   350 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1275  learning_rate 0.000010
+2018-01-27 04:25:31  TENSOR_SGD_ELU epoch: 14 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0685  learning_rate 0.000010
+2018-01-27 04:26:49  TENSOR_SGD_ELU epoch: 14 ,  batch:   450 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1329  learning_rate 0.000010
+2018-01-27 04:28:08  TENSOR_SGD_ELU epoch: 14 ,  batch:   500 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1055  learning_rate 0.000010
+2018-01-27 04:29:27  TENSOR_SGD_ELU epoch: 14 ,  batch:   550 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0778  learning_rate 0.000010
+2018-01-27 04:30:46  TENSOR_SGD_ELU epoch: 14 ,  batch:   600 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1318  learning_rate 0.000010
+2018-01-27 04:32:04  TENSOR_SGD_ELU epoch: 14 ,  batch:   650 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0622  learning_rate 0.000010
+2018-01-27 04:33:22  TENSOR_SGD_ELU epoch: 14 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0696  learning_rate 0.000010
+2018-01-27 04:34:40  TENSOR_SGD_ELU epoch: 14 ,  batch:   750 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0529  learning_rate 0.000010
+2018-01-27 04:35:59  TENSOR_SGD_ELU epoch: 14 ,  batch:   800 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1325  learning_rate 0.000010
+2018-01-27 04:37:18  TENSOR_SGD_ELU epoch: 14 ,  batch:   850 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1401  learning_rate 0.000010
+2018-01-27 04:38:36  TENSOR_SGD_ELU epoch: 14 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0665  learning_rate 0.000010
+2018-01-27 04:39:32  epoch:    14 , train_acc: 0.9720  avg_train_loss: 0.1042
+2018-01-27 04:43:01  epoch:    14 , val_acc: 0.9755  avg_val_loss: 0.0889
+2018-01-27 04:44:18  TENSOR_SGD_ELU epoch: 15 ,  batch:    50 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1037  learning_rate 0.000010
+2018-01-27 04:45:36  TENSOR_SGD_ELU epoch: 15 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0677  learning_rate 0.000010
+2018-01-27 04:46:53  TENSOR_SGD_ELU epoch: 15 ,  batch:   150 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1083  learning_rate 0.000010
+2018-01-27 04:48:10  TENSOR_SGD_ELU epoch: 15 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0811  learning_rate 0.000010
+2018-01-27 04:49:28  TENSOR_SGD_ELU epoch: 15 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1306  learning_rate 0.000010
+2018-01-27 04:50:45  TENSOR_SGD_ELU epoch: 15 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1649  learning_rate 0.000010
+2018-01-27 04:52:04  TENSOR_SGD_ELU epoch: 15 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1856  learning_rate 0.000010
+2018-01-27 04:53:21  TENSOR_SGD_ELU epoch: 15 ,  batch:   400 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0473  learning_rate 0.000010
+2018-01-27 04:54:39  TENSOR_SGD_ELU epoch: 15 ,  batch:   450 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0663  learning_rate 0.000010
+2018-01-27 04:55:57  TENSOR_SGD_ELU epoch: 15 ,  batch:   500 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0752  learning_rate 0.000010
+2018-01-27 04:57:14  TENSOR_SGD_ELU epoch: 15 ,  batch:   550 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0727  learning_rate 0.000010
+2018-01-27 04:58:32  TENSOR_SGD_ELU epoch: 15 ,  batch:   600 , avg_batch_acc: 0.9531  avg_batch_loss: 0.2583  learning_rate 0.000010
+2018-01-27 04:59:50  TENSOR_SGD_ELU epoch: 15 ,  batch:   650 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0371  learning_rate 0.000010
+2018-01-27 05:01:09  TENSOR_SGD_ELU epoch: 15 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0946  learning_rate 0.000010
+2018-01-27 05:02:27  TENSOR_SGD_ELU epoch: 15 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0870  learning_rate 0.000010
+2018-01-27 05:03:45  TENSOR_SGD_ELU epoch: 15 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1252  learning_rate 0.000010
+2018-01-27 05:05:03  TENSOR_SGD_ELU epoch: 15 ,  batch:   850 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0780  learning_rate 0.000010
+2018-01-27 05:06:20  TENSOR_SGD_ELU epoch: 15 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1655  learning_rate 0.000010
+2018-01-27 05:07:16  epoch:    15 , train_acc: 0.9708  avg_train_loss: 0.1070
+2018-01-27 05:10:46  epoch:    15 , val_acc: 0.9772  avg_val_loss: 0.0846
+2018-01-27 05:12:05  TENSOR_SGD_ELU epoch: 16 ,  batch:    50 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0956  learning_rate 0.000010
+2018-01-27 05:13:23  TENSOR_SGD_ELU epoch: 16 ,  batch:   100 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1384  learning_rate 0.000010
+2018-01-27 05:14:43  TENSOR_SGD_ELU epoch: 16 ,  batch:   150 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1269  learning_rate 0.000010
+2018-01-27 05:16:00  TENSOR_SGD_ELU epoch: 16 ,  batch:   200 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1241  learning_rate 0.000010
+2018-01-27 05:17:19  TENSOR_SGD_ELU epoch: 16 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1000  learning_rate 0.000010
+2018-01-27 05:18:37  TENSOR_SGD_ELU epoch: 16 ,  batch:   300 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1212  learning_rate 0.000010
+2018-01-27 05:19:55  TENSOR_SGD_ELU epoch: 16 ,  batch:   350 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1250  learning_rate 0.000010
+2018-01-27 05:21:14  TENSOR_SGD_ELU epoch: 16 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0895  learning_rate 0.000010
+2018-01-27 05:22:32  TENSOR_SGD_ELU epoch: 16 ,  batch:   450 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0493  learning_rate 0.000010
+2018-01-27 05:23:51  TENSOR_SGD_ELU epoch: 16 ,  batch:   500 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1039  learning_rate 0.000010
+2018-01-27 05:25:09  TENSOR_SGD_ELU epoch: 16 ,  batch:   550 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0809  learning_rate 0.000010
+2018-01-27 05:26:27  TENSOR_SGD_ELU epoch: 16 ,  batch:   600 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1489  learning_rate 0.000010
+2018-01-27 05:27:45  TENSOR_SGD_ELU epoch: 16 ,  batch:   650 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1288  learning_rate 0.000010
+2018-01-27 05:29:04  TENSOR_SGD_ELU epoch: 16 ,  batch:   700 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0948  learning_rate 0.000010
+2018-01-27 05:30:22  TENSOR_SGD_ELU epoch: 16 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1029  learning_rate 0.000010
+2018-01-27 05:31:40  TENSOR_SGD_ELU epoch: 16 ,  batch:   800 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0589  learning_rate 0.000010
+2018-01-27 05:32:58  TENSOR_SGD_ELU epoch: 16 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0784  learning_rate 0.000010
+2018-01-27 05:34:16  TENSOR_SGD_ELU epoch: 16 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0968  learning_rate 0.000010
+2018-01-27 05:35:12  epoch:    16 , train_acc: 0.9703  avg_train_loss: 0.1052
+2018-01-27 05:38:40  epoch:    16 , val_acc: 0.9660  avg_val_loss: 0.1087
+2018-01-27 05:39:58  TENSOR_SGD_ELU epoch: 17 ,  batch:    50 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1395  learning_rate 0.000010
+2018-01-27 05:41:16  TENSOR_SGD_ELU epoch: 17 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0567  learning_rate 0.000010
+2018-01-27 05:42:35  TENSOR_SGD_ELU epoch: 17 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1283  learning_rate 0.000010
+2018-01-27 05:43:54  TENSOR_SGD_ELU epoch: 17 ,  batch:   200 , avg_batch_acc: 0.9375  avg_batch_loss: 0.2534  learning_rate 0.000010
+2018-01-27 05:45:13  TENSOR_SGD_ELU epoch: 17 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0417  learning_rate 0.000010
+2018-01-27 05:46:32  TENSOR_SGD_ELU epoch: 17 ,  batch:   300 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1489  learning_rate 0.000010
+2018-01-27 05:47:51  TENSOR_SGD_ELU epoch: 17 ,  batch:   350 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0824  learning_rate 0.000010
+2018-01-27 05:49:09  TENSOR_SGD_ELU epoch: 17 ,  batch:   400 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0527  learning_rate 0.000010
+2018-01-27 05:50:29  TENSOR_SGD_ELU epoch: 17 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1101  learning_rate 0.000010
+2018-01-27 05:51:48  TENSOR_SGD_ELU epoch: 17 ,  batch:   500 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1447  learning_rate 0.000010
+2018-01-27 05:53:06  TENSOR_SGD_ELU epoch: 17 ,  batch:   550 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0444  learning_rate 0.000010
+2018-01-27 05:54:25  TENSOR_SGD_ELU epoch: 17 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0641  learning_rate 0.000010
+2018-01-27 05:55:44  TENSOR_SGD_ELU epoch: 17 ,  batch:   650 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0345  learning_rate 0.000010
+2018-01-27 05:57:02  TENSOR_SGD_ELU epoch: 17 ,  batch:   700 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0776  learning_rate 0.000010
+2018-01-27 05:58:21  TENSOR_SGD_ELU epoch: 17 ,  batch:   750 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0926  learning_rate 0.000010
+2018-01-27 05:59:40  TENSOR_SGD_ELU epoch: 17 ,  batch:   800 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0754  learning_rate 0.000010
+2018-01-27 06:00:59  TENSOR_SGD_ELU epoch: 17 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1018  learning_rate 0.000010
+2018-01-27 06:02:18  TENSOR_SGD_ELU epoch: 17 ,  batch:   900 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0763  learning_rate 0.000010
+2018-01-27 06:03:14  epoch:    17 , train_acc: 0.9717  avg_train_loss: 0.1010
+2018-01-27 06:06:43  epoch:    17 , val_acc: 0.9763  avg_val_loss: 0.0867
+2018-01-27 06:08:01  TENSOR_SGD_ELU epoch: 18 ,  batch:    50 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1924  learning_rate 0.000010
+2018-01-27 06:09:21  TENSOR_SGD_ELU epoch: 18 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0776  learning_rate 0.000010
+2018-01-27 06:10:40  TENSOR_SGD_ELU epoch: 18 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0967  learning_rate 0.000010
+2018-01-27 06:11:58  TENSOR_SGD_ELU epoch: 18 ,  batch:   200 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0876  learning_rate 0.000010
+2018-01-27 06:13:16  TENSOR_SGD_ELU epoch: 18 ,  batch:   250 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0640  learning_rate 0.000010
+2018-01-27 06:14:35  TENSOR_SGD_ELU epoch: 18 ,  batch:   300 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0321  learning_rate 0.000010
+2018-01-27 06:15:54  TENSOR_SGD_ELU epoch: 18 ,  batch:   350 , avg_batch_acc: 0.9219  avg_batch_loss: 0.2376  learning_rate 0.000010
+2018-01-27 06:17:12  TENSOR_SGD_ELU epoch: 18 ,  batch:   400 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0445  learning_rate 0.000010
+2018-01-27 06:18:31  TENSOR_SGD_ELU epoch: 18 ,  batch:   450 , avg_batch_acc: 0.9062  avg_batch_loss: 0.2279  learning_rate 0.000010
+2018-01-27 06:19:49  TENSOR_SGD_ELU epoch: 18 ,  batch:   500 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1756  learning_rate 0.000010
+2018-01-27 06:21:07  TENSOR_SGD_ELU epoch: 18 ,  batch:   550 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0527  learning_rate 0.000010
+2018-01-27 06:22:26  TENSOR_SGD_ELU epoch: 18 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0583  learning_rate 0.000010
+2018-01-27 06:23:43  TENSOR_SGD_ELU epoch: 18 ,  batch:   650 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1803  learning_rate 0.000010
+2018-01-27 06:25:01  TENSOR_SGD_ELU epoch: 18 ,  batch:   700 , avg_batch_acc: 0.9531  avg_batch_loss: 0.1247  learning_rate 0.000010
+2018-01-27 06:26:19  TENSOR_SGD_ELU epoch: 18 ,  batch:   750 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0411  learning_rate 0.000010
+2018-01-27 06:27:38  TENSOR_SGD_ELU epoch: 18 ,  batch:   800 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0497  learning_rate 0.000010
+2018-01-27 06:28:56  TENSOR_SGD_ELU epoch: 18 ,  batch:   850 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0719  learning_rate 0.000010
+2018-01-27 06:30:15  TENSOR_SGD_ELU epoch: 18 ,  batch:   900 , avg_batch_acc: 0.9531  avg_batch_loss: 0.2801  learning_rate 0.000010
+2018-01-27 06:31:12  epoch:    18 , train_acc: 0.9722  avg_train_loss: 0.1007
+2018-01-27 06:34:42  epoch:    18 , val_acc: 0.9739  avg_val_loss: 0.0923
+2018-01-27 06:36:01  TENSOR_SGD_ELU epoch: 19 ,  batch:    50 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1014  learning_rate 0.000010
+2018-01-27 06:37:17  TENSOR_SGD_ELU epoch: 19 ,  batch:   100 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0501  learning_rate 0.000010
+2018-01-27 06:38:32  TENSOR_SGD_ELU epoch: 19 ,  batch:   150 , avg_batch_acc: 0.9844  avg_batch_loss: 0.0975  learning_rate 0.000010
+2018-01-27 06:39:46  TENSOR_SGD_ELU epoch: 19 ,  batch:   200 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0955  learning_rate 0.000010
+2018-01-27 06:40:59  TENSOR_SGD_ELU epoch: 19 ,  batch:   250 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1157  learning_rate 0.000010
+2018-01-27 06:42:13  TENSOR_SGD_ELU epoch: 19 ,  batch:   300 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0584  learning_rate 0.000010
+2018-01-27 06:43:28  TENSOR_SGD_ELU epoch: 19 ,  batch:   350 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1036  learning_rate 0.000010
+2018-01-27 06:44:42  TENSOR_SGD_ELU epoch: 19 ,  batch:   400 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1144  learning_rate 0.000010
+2018-01-27 06:45:56  TENSOR_SGD_ELU epoch: 19 ,  batch:   450 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0900  learning_rate 0.000010
+2018-01-27 06:47:10  TENSOR_SGD_ELU epoch: 19 ,  batch:   500 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0342  learning_rate 0.000010
+2018-01-27 06:48:25  TENSOR_SGD_ELU epoch: 19 ,  batch:   550 , avg_batch_acc: 1.0000  avg_batch_loss: 0.0683  learning_rate 0.000010
+2018-01-27 06:49:39  TENSOR_SGD_ELU epoch: 19 ,  batch:   600 , avg_batch_acc: 0.9844  avg_batch_loss: 0.1221  learning_rate 0.000010
+2018-01-27 06:50:53  TENSOR_SGD_ELU epoch: 19 ,  batch:   650 , avg_batch_acc: 0.9219  avg_batch_loss: 0.1811  learning_rate 0.000010
+2018-01-27 06:52:07  TENSOR_SGD_ELU epoch: 19 ,  batch:   700 , avg_batch_acc: 0.9375  avg_batch_loss: 0.1472  learning_rate 0.000010
+2018-01-27 06:53:21  TENSOR_SGD_ELU epoch: 19 ,  batch:   750 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1518  learning_rate 0.000010
+2018-01-27 06:54:35  TENSOR_SGD_ELU epoch: 19 ,  batch:   800 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0732  learning_rate 0.000010
+2018-01-27 06:55:49  TENSOR_SGD_ELU epoch: 19 ,  batch:   850 , avg_batch_acc: 0.9688  avg_batch_loss: 0.1239  learning_rate 0.000010
+2018-01-27 06:57:03  TENSOR_SGD_ELU epoch: 19 ,  batch:   900 , avg_batch_acc: 0.9688  avg_batch_loss: 0.0781  learning_rate 0.000010
+2018-01-27 06:57:56  epoch:    19 , train_acc: 0.9703  avg_train_loss: 0.1057
+2018-01-27 07:01:15  epoch:    19 , val_acc: 0.9767  avg_val_loss: 0.0865

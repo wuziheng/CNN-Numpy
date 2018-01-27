@@ -60,99 +60,97 @@ test_images, test_labels = load_mnist('./data/mnist', 't10k')
 # save train curve config
 loss_collect = []
 acc_collect = []
-if not os.path.exists('fig/%s'%VERSION):
-    os.mkdir('fig/%s'%VERSION)
-savepath = 'fig/%s'%VERSION
 
-
-for epoch in range(20):
-    learning_rate = 1e-5
-
-    batch_loss = 0
-    batch_acc = 0
-    val_acc = 0
-    val_loss = 0
-
-    # train
-    train_acc = 0
-    train_loss = 0
-
-    for i in range(images.shape[0] / batch_size):
-        # feed
-        # random shuffle
-        order = np.arange(images.shape[0])
-        np.random.shuffle(order)
-        _images = images[order]
-        _labels = labels[order]
-
-        img_placeholder.data = _images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
-        label_placeholder.data = _labels[i * batch_size:(i + 1) * batch_size]
-
-        # forward
-        _loss = sf.loss.eval()
-        _prediction = sf.prediction.eval()
-
-        batch_loss += _loss
-        train_loss += _loss
-
-        for j in range(batch_size):
-            if np.argmax(_prediction[j]) == label_placeholder.data[j]:
-                batch_acc += 1
-                train_acc += 1
-
-        # backward
-        img_placeholder.diff_eval()
-
-        for k in var.GLOBAL_VARIABLE_SCOPE:
-            s = var.GLOBAL_VARIABLE_SCOPE[k]
-            if isinstance(s, var.Variable) and s.learnable:
-                s.apply_gradient(learning_rate=learning_rate, decay_rate=0.0004)
-            if isinstance(s, var.Variable):
-                s.diff = np.zeros(s.shape)
-
-
-        if i % 50 == 0 and i!= 0:
-            print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + \
-                      "  %s epoch: %d ,  batch: %5d , avg_batch_acc: %.4f  avg_batch_loss: %.4f  learning_rate %f" % (VERSION,epoch,
-                                                                                                 i, batch_acc / float(
-                          batch_size), batch_loss / batch_size, learning_rate)
-
-            loss_collect.append(batch_loss / batch_size)
-            acc_collect.append(batch_acc / float(batch_size))
-
+with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
+    for epoch in range(20):
+        learning_rate = 1e-5
 
         batch_loss = 0
         batch_acc = 0
+        val_acc = 0
+        val_loss = 0
+
+        # train
+        train_acc = 0
+        train_loss = 0
+
+        for i in range(images.shape[0] / batch_size):
+            # feed
+            # random shuffle
+            order = np.arange(images.shape[0])
+            np.random.shuffle(order)
+            _images = images[order]
+            _labels = labels[order]
+
+            img_placeholder.data = _images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
+            label_placeholder.data = _labels[i * batch_size:(i + 1) * batch_size]
+
+            # forward
+            _loss = sf.loss.eval()
+            _prediction = sf.prediction.eval()
+
+            batch_loss += _loss
+            train_loss += _loss
+
+            for j in range(batch_size):
+                if np.argmax(_prediction[j]) == label_placeholder.data[j]:
+                    batch_acc += 1
+                    train_acc += 1
+
+            # backward
+            img_placeholder.diff_eval()
+
+            for k in var.GLOBAL_VARIABLE_SCOPE:
+                s = var.GLOBAL_VARIABLE_SCOPE[k]
+                if isinstance(s, var.Variable) and s.learnable:
+                    s.apply_gradient(learning_rate=learning_rate, decay_rate=0.0004)
+                if isinstance(s, var.Variable):
+                    s.diff = np.zeros(s.shape)
 
 
-    print time.strftime("%Y-%m-%d %H:%M:%S",
-                            time.localtime()) + "  epoch: %5d , train_acc: %.4f  avg_train_loss: %.4f" % (
-            epoch, train_acc / float(int(images.shape[0]/batch_size)*batch_size), train_loss / images.shape[0])
+            if i % 50 == 0 and i!= 0:
+                print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + \
+                          "  %s epoch: %d ,  batch: %5d , avg_batch_acc: %.4f  avg_batch_loss: %.4f  learning_rate %f" % (VERSION,epoch,
+                                                                                                     i, batch_acc / float(
+                              batch_size), batch_loss / batch_size, learning_rate)
+                logf.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + \
+                          "  %s epoch: %d ,  batch: %5d , avg_batch_acc: %.4f  avg_batch_loss: %.4f  learning_rate %f" % (VERSION,epoch,
+                                                                                                     i, batch_acc / float(
+                              batch_size), batch_loss / batch_size, learning_rate))
+                loss_collect.append(batch_loss / batch_size)
+                acc_collect.append(batch_acc / float(batch_size))
 
-    # save train_collection fig
-    plot.saveplot(loss_collect, 'loss', '%s/l5E%d_%s.jpg' % (savepath, epoch, 'loss'))
-    plot.saveplot(acc_collect, 'acc', '%s/l5E%d_%s.jpg' % (savepath, epoch, 'acc'))
 
-    # validation
-    for i in range(test_images.shape[0] / batch_size):
-        img_placeholder.data = test_images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
-        label_placeholder.data = test_labels[i * batch_size:(i + 1) * batch_size]
+            batch_loss = 0
+            batch_acc = 0
 
-        for k in var.GLOBAL_VARIABLE_SCOPE:
-            s = var.GLOBAL_VARIABLE_SCOPE[k]
-            if isinstance(s, var.Variable):
-                s.wait_bp = False
-            if isinstance(s, op.Operator):
-                s.wait_forward = True
 
-        _loss = sf.loss.eval()
-        _prediction = sf.prediction.eval()
+        print time.strftime("%Y-%m-%d %H:%M:%S",
+                                time.localtime()) + "  epoch: %5d , train_acc: %.4f  avg_train_loss: %.4f" % (
+                epoch, train_acc / float(int(images.shape[0]/batch_size)*batch_size), train_loss / images.shape[0])
 
-        val_loss += _loss
 
-        for j in range(batch_size):
-            if np.argmax(sf.softmax[j]) == label_placeholder.data[j]:
-                val_acc += 1
 
-    print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "  epoch: %5d , val_acc: %.4f  avg_val_loss: %.4f" % (
-        epoch, val_acc / float(int(test_images.shape[0]/batch_size)*batch_size), val_loss / test_images.shape[0])
+        # validation
+        for i in range(test_images.shape[0] / batch_size):
+            img_placeholder.data = test_images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
+            label_placeholder.data = test_labels[i * batch_size:(i + 1) * batch_size]
+
+            for k in var.GLOBAL_VARIABLE_SCOPE:
+                s = var.GLOBAL_VARIABLE_SCOPE[k]
+                if isinstance(s, var.Variable):
+                    s.wait_bp = False
+                if isinstance(s, op.Operator):
+                    s.wait_forward = True
+
+            _loss = sf.loss.eval()
+            _prediction = sf.prediction.eval()
+
+            val_loss += _loss
+
+            for j in range(batch_size):
+                if np.argmax(sf.softmax[j]) == label_placeholder.data[j]:
+                    val_acc += 1
+
+        print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "  epoch: %5d , val_acc: %.4f  avg_val_loss: %.4f" % (
+            epoch, val_acc / float(int(test_images.shape[0]/batch_size)*batch_size), val_loss / test_images.shape[0])
