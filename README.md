@@ -58,6 +58,8 @@
 
 ------
 
+*Target3*: 　实现不同的激活函数（relu系和sigmoid系)，比对分析：
+
 * 给train_epoch读入图片添加了shuffle
 * 完成了不同的激活函数relu,leaky-relu,sigmoid,tanh,elu, prelu
 * 完成了对激活函数的grad_check,实际上sigmoid确实容易出现gradient-vanish,所以一开始用1e-5学习率基本收敛的特别慢，所以实际测试里面调整到了1e-3
@@ -82,11 +84,39 @@
 
 由于我们没有精调参数，所以这里就不分析比较准确率曲线，我们就分析不同激活函数的收敛速度：
 
-1. 左图可以看到tanh,sigmoid即使采用了更大的学习率，在收敛速度上依然比relu要慢不少
-2. 右图我们可以看到，这么多种relu,在收敛速度上，没有质的区别，即使是不同alpha的leak-relu，区别也不大。但是我们还是可以勉强认为leaky-relu稍微比relu强一些。
+1. 左图可以看到tanh,sigmoid还是存在比较明显的gradient vanish，网络只有2层。即使采用了更大的学习率，在收敛速度上依然比relu要慢不少
+2. 右图我们可以看到，这么多种relu,在收敛速度上，没有质的区别，即使是不同alpha的leak-relu（alpha=0.01,0.001），区别也不大。但是我们还是可以勉强认为leaky-relu稍微比relu强一些。
 
 <center>
 
 <img src="fig/activation-loss1.jpg" style="zoom:100%"/>  <img src="fig/activation-loss2.jpg" style="zoom:100%"/>
 
 </center>
+
+～
+
+**2018.01.30**
+
+------
+
+由于不可抗力（～要给女友写论文做实验～），中断了几天。计划给Variable class添加method和initializer属性,用于全局控制变量的优化方法和初始化（这里就感觉到，应该抽象一个graph class,然后把Variable, Operator抽象成Node,方便控制全局的方法，例如初始化，优化方法设置，源求导，汇求值，全局apply_gradient等等，都可以变成graph的方法）。
+
+原始的版本实现了SGD与MSRA.计划实现：
+
+* method: sgd, momentum ,Nesterov, Adam ,RMSProp 等进行比对
+* initializer: MSRA,  Xavier, Zeros, Const
+
+ps:注意到之前的版本apply_gradient，diff都没有/batch_size,从这个版本添加上了.这样就收敛速度就不会显式的受到batch_size的影响(这个地方还是需要思考一下，因为从epoch角度来讲，不除比较稳定)。当然我就把初始learning_rate调大了50倍．同时，添加了util.learning_rate_decay,用于让学习率自动衰减.
+
+| *learning_rate* | *batch_size* | *decay_rate* | *decay_epoch* | *initializer* |
+| :-------------: | :----------: | :----------: | :-----------: | :-----------: |
+|      5e-4       |      64      |     0.1      |       5       |     MSRA      |
+
+| version  |      |      |      |      |
+| :------: | ---- | ---- | ---- | ---- |
+|   SGD    |      |      |      |      |
+| Momentum |      |      |      |      |
+| Nesterov |      |      |      |      |
+|   Adam   |      |      |      |      |
+
+这里我们也一样比较了几种method在LRELU下的表现，由于初始化是随机的＋网络很浅，所以好像差别也不是特别明显，没有activation之间表现的差距那么明显。之后可能会在更深的网络上进行测试把。

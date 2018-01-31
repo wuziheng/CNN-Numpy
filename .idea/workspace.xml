@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708b0f72-658b-4f0f-b78b-3e37d86e8d08" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/TENSOR_SGD_PRELU_log.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/elu.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/lrelu.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/lrelu1.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fig/activation-acc1.jpg" afterPath="$PROJECT_DIR$/fig/activation-acc1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fig/activation-acc2.jpg" afterPath="$PROJECT_DIR$/fig/activation-acc2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fig/activation-loss1.jpg" afterPath="$PROJECT_DIR$/fig/activation-loss1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fig/activation-loss2.jpg" afterPath="$PROJECT_DIR$/fig/activation-loss2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot.py" afterPath="$PROJECT_DIR$/plot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lenet_tensor.py" afterPath="$PROJECT_DIR$/lenet_tensor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensor/Operator.py" afterPath="$PROJECT_DIR$/tensor/Operator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensor/Variable.py" afterPath="$PROJECT_DIR$/tensor/Variable.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensor/util.py" afterPath="$PROJECT_DIR$/tensor/util.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CNN_Numpy$plot.coverage" NAME="plot Coverage Results" MODIFIED="1517033556955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNN_Numpy$plot.coverage" NAME="plot Coverage Results" MODIFIED="1517299775705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNN_Numpy$lenet.coverage" NAME="lenet Coverage Results" MODIFIED="1516950776358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNN_Numpy$Activation.coverage" NAME="Activation Coverage Results" MODIFIED="1516975298846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensor" />
     <SUITE FILE_PATH="coverage/CNN_Numpy$Variable.coverage" NAME="test Coverage Results" MODIFIED="1516869779876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNN_Numpy$lenet_tensor.coverage" NAME="lenet_tensor Coverage Results" MODIFIED="1517031965056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNN_Numpy$lenet_tensor.coverage" NAME="lenet_tensor Coverage Results" MODIFIED="1517319001925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -33,28 +29,40 @@
       <file leaf-file-name="lenet_tensor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+            <state relative-caret-position="2353">
+              <caret line="134" column="25" lean-forward="false" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#260#932#0" expanded="false" />
-                <element signature="e#5021#5746#0" expanded="false" />
-                <element signature="e#5277#5484#0" expanded="false" />
+                <element signature="e#319#991#0" expanded="false" />
+                <element signature="e#1813#1928#0" expanded="false" />
+                <element signature="e#5376#6101#0" expanded="false" />
+                <element signature="e#5632#5839#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plot.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plot.py">
+      <file leaf-file-name="Variable.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensor/Variable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="676">
+              <caret line="107" column="18" lean-forward="true" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#120#448#0" expanded="false" />
-                <element signature="e#503#806#0" expanded="false" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#344#1143#0" expanded="false" />
+                <element signature="e#1173#1308#0" expanded="false" />
+                <element signature="e#1343#1548#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Activation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensor/Activation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5772">
+              <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +89,7 @@
       <find>GLO</find>
       <find>collection</find>
       <find>loss</find>
+      <find>batch_loss</find>
     </findStrings>
     <replaceStrings>
       <replace>shape</replace>
@@ -104,15 +113,15 @@
         <option value="$PROJECT_DIR$/Operator/__init__.py" />
         <option value="$PROJECT_DIR$/layers/softmax.py" />
         <option value="$PROJECT_DIR$/test_conv.py" />
-        <option value="$PROJECT_DIR$/tensor/util.py" />
         <option value="$PROJECT_DIR$/layers/base_conv.py" />
         <option value="$PROJECT_DIR$/tensor/Graph.py" />
-        <option value="$PROJECT_DIR$/tensor/Variable.py" />
-        <option value="$PROJECT_DIR$/lenet_layers.py" />
-        <option value="$PROJECT_DIR$/tensor/Operator.py" />
         <option value="$PROJECT_DIR$/tensor/Activation.py" />
-        <option value="$PROJECT_DIR$/lenet_tensor.py" />
         <option value="$PROJECT_DIR$/plot.py" />
+        <option value="$PROJECT_DIR$/lenet_layers.py" />
+        <option value="$PROJECT_DIR$/lenet_tensor.py" />
+        <option value="$PROJECT_DIR$/tensor/util.py" />
+        <option value="$PROJECT_DIR$/tensor/Operator.py" />
+        <option value="$PROJECT_DIR$/tensor/Variable.py" />
       </list>
     </option>
   </component>
@@ -123,10 +132,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="353" />
-    <option name="y" value="265" />
-    <option name="width" value="1853" />
-    <option name="height" value="1028" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -146,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,7 +198,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -209,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot">
+  <component name="RunManager" selected="Python.lenet_tensor">
     <configuration default="false" name="lenet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -462,8 +471,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.plot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lenet_tensor" />
+        <item index="0" class="java.lang.String" itemvalue="Python.lenet_tensor" />
+        <item index="1" class="java.lang.String" itemvalue="Python.plot" />
         <item index="2" class="java.lang.String" itemvalue="Python.Activation" />
         <item index="3" class="java.lang.String" itemvalue="Python.lenet" />
         <item index="4" class="java.lang.String" itemvalue="Python.test" />
@@ -484,20 +493,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="353" y="265" width="1853" height="1028" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091864966" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.092316195" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33702883" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31732777" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6699834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -523,13 +531,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#319#991#0" expanded="false" />
+            <element signature="e#1813#1928#0" expanded="false" />
+            <element signature="e#5376#6101#0" expanded="false" />
+            <element signature="e#5632#5839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#120#448#0" expanded="false" />
+            <element signature="e#503#806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#319#991#0" expanded="false" />
+            <element signature="e#1813#1928#0" expanded="false" />
+            <element signature="e#5376#6101#0" expanded="false" />
+            <element signature="e#5632#5839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#120#448#0" expanded="false" />
+            <element signature="e#503#806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#319#991#0" expanded="false" />
+            <element signature="e#1813#1928#0" expanded="false" />
+            <element signature="e#5376#6101#0" expanded="false" />
+            <element signature="e#5632#5839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#120#448#0" expanded="false" />
+            <element signature="e#503#806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2912">
           <caret line="129" column="36" lean-forward="false" selection-start-line="129" selection-start-column="36" selection-end-line="129" selection-end-column="36" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#260#932#0" expanded="false" />
-            <element signature="e#5021#5746#0" expanded="false" />
-            <element signature="e#5277#5484#0" expanded="false" />
+            <element signature="e#319#991#0" expanded="false" />
+            <element signature="e#1813#1928#0" expanded="false" />
+            <element signature="e#5376#6101#0" expanded="false" />
+            <element signature="e#5632#5839#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,17 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2288">
           <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#130#1099#0" expanded="false" />
-            <element signature="e#439#722#0" expanded="false" />
-            <element signature="e#756#1099#0" expanded="false" />
-            <element signature="e#1129#2223#0" expanded="false" />
-            <element signature="e#2255#3417#0" expanded="false" />
-            <element signature="e#3446#4393#0" expanded="false" />
-            <element signature="e#4421#5607#0" expanded="false" />
-            <element signature="e#6999#7013#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,10 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1776#2020#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensor/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layers/softmax.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -642,63 +707,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensor/Graph.py" />
-    <entry file="file://$PROJECT_DIR$/lenet_layers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="145" column="26" lean-forward="false" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensor/Operator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="261" column="18" lean-forward="false" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#102#1837#0" expanded="false" />
-            <element signature="e#1869#6657#0" expanded="false" />
-            <element signature="e#6692#8976#0" expanded="false" />
-            <element signature="e#6775#7510#0" expanded="false" />
-            <element signature="e#7543#7769#0" expanded="false" />
-            <element signature="e#8230#8976#0" expanded="false" />
-            <element signature="e#9887#10273#0" expanded="false" />
-            <element signature="e#10983#11006#0" expanded="false" />
-            <element signature="e#12064#13959#0" expanded="false" />
-            <element signature="e#14029#15382#0" expanded="false" />
-            <element signature="e#15423#15828#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensor/Variable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1776#2020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensor/Activation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1766">
-          <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#130#1099#0" expanded="false" />
-            <element signature="e#439#722#0" expanded="false" />
-            <element signature="e#756#1099#0" expanded="false" />
-            <element signature="e#1129#2223#0" expanded="false" />
-            <element signature="e#2255#3417#0" expanded="false" />
-            <element signature="e#3446#4393#0" expanded="false" />
-            <element signature="e#4421#5607#0" expanded="false" />
-            <element signature="e#6999#7013#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fig/activation-acc1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -708,33 +716,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#1490#1960#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
+    <entry file="file://$PROJECT_DIR$/lenet_layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+        <state relative-caret-position="254">
+          <caret line="106" column="4" lean-forward="true" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="24" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#260#932#0" expanded="false" />
-            <element signature="e#5021#5746#0" expanded="false" />
-            <element signature="e#5277#5484#0" expanded="false" />
+            <element signature="e#1078#1116#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="936">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#120#448#0" expanded="false" />
             <element signature="e#503#806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensor/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="90" lean-forward="false" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding>
+            <element signature="e#69#372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensor/Activation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5772">
+          <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensor/Operator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+          <folding>
+            <element signature="e#11018#12913#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lenet_tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2353">
+          <caret line="134" column="25" lean-forward="false" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#319#991#0" expanded="false" />
+            <element signature="e#1813#1928#0" expanded="false" />
+            <element signature="e#5376#6101#0" expanded="false" />
+            <element signature="e#5632#5839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensor/Variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="107" column="18" lean-forward="true" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#344#1143#0" expanded="false" />
+            <element signature="e#1173#1308#0" expanded="false" />
+            <element signature="e#1343#1548#0" expanded="false" />
           </folding>
         </state>
       </provider>

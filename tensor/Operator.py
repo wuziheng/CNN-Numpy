@@ -262,32 +262,6 @@ class FullyConnect(Operator):
             return
 
 
-# class Relu(Operator):
-#     def __init__(self, input_variable=Variable, name=str):
-#         self.input_variables = input_variable
-#         self.output_variables = Variable(self.input_variables.shape, name='out', scope=name)
-#         Operator.__init__(self, name, self.input_variables, self.output_variables)
-#
-#     def forward(self):
-#         if self.wait_forward:
-#             for parent in self.parent:
-#                 GLOBAL_VARIABLE_SCOPE[parent].eval()
-#             self.output_variables.data = np.maximum(self.input_variables.data, 0)
-#             self.wait_forward = False
-#             return
-#         else:
-#             pass
-#
-#     def backward(self):
-#         if self.wait_forward:
-#             pass
-#         else:
-#             for child in self.child:
-#                 GLOBAL_VARIABLE_SCOPE[child].diff_eval()
-#             self.input_variables.diff = self.output_variables.diff
-#             self.output_variables.diff[self.input_variables.data < 0] = 0
-#             self.wait_forward = True
-#             return
 
 
 class SoftmaxLoss(Operator):

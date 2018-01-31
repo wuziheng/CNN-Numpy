@@ -2,6 +2,7 @@ import numpy as np
 import tensor.Variable as var
 import tensor.Operator as op
 import tensor.Activation as activation
+from tensor.util import learning_rate_exponential_decay
 import plot
 
 import time
@@ -9,7 +10,7 @@ import struct
 from glob import glob
 import os
 
-VERSION = 'TENSOR_SGD_PRELU'
+VERSION = 'TENSOR_Adagrad_RELU'
 
 
 def load_mnist(path, kind='train'):
@@ -34,11 +35,11 @@ def load_mnist(path, kind='train'):
 
 def inference(x, output_num):
     conv1_out = op.Conv2D((5, 5, 1, 12), input_variable=x, name='conv1', padding='VALID').output_variables
-    relu1_out = activation.Prelu(input_variable=conv1_out, name='Prelu1').output_variables
+    relu1_out = activation.Relu(input_variable=conv1_out, name='relu1').output_variables
     pool1_out = op.MaxPooling(ksize=2, input_variable=relu1_out, name='pool1').output_variables
 
     conv2_out = op.Conv2D((3, 3, 12, 24), input_variable=pool1_out, name='conv2').output_variables
-    relu2_out = activation.Prelu(input_variable=conv2_out, name='Prelu2').output_variables
+    relu2_out = activation.Relu(input_variable=conv2_out, name='relu2').output_variables
     pool2_out = op.MaxPooling(ksize=2, input_variable=relu2_out, name='pool2').output_variables
 
     fc_out = op.FullyConnect(output_num=output_num, input_variable=pool2_out, name='fc').output_variables
@@ -46,6 +47,13 @@ def inference(x, output_num):
 
 
 batch_size = 64
+global_step = 0
+# set method
+for k in var.GLOBAL_VARIABLE_SCOPE:
+    s = var.GLOBAL_VARIABLE_SCOPE[k]
+    if isinstance(s, var.Variable) and s.learnable:
+        s.set_method_adagrad()
+
 img_placeholder = var.Variable((batch_size, 28, 28, 1), 'input')
 label_placeholder = var.Variable([batch_size, 1], 'label')
 
@@ -63,10 +71,16 @@ acc_collect = []
 
 with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
     for epoch in range(20):
-        learning_rate = 1e-5
+        # random shuffle
+        order = np.arange(images.shape[0])
+        np.random.shuffle(order)
+        _images = images[order]
+        _labels = labels[order]
 
+        # batch
         batch_loss = 0
         batch_acc = 0
+
         val_acc = 0
         val_loss = 0
 
@@ -75,13 +89,9 @@ with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
         train_loss = 0
 
         for i in range(images.shape[0] / batch_size):
-            # feed
-            # random shuffle
-            order = np.arange(images.shape[0])
-            np.random.shuffle(order)
-            _images = images[order]
-            _labels = labels[order]
+            learning_rate = learning_rate_exponential_decay(1e-4, global_step, 0.1, 5000)
 
+            # feed
             img_placeholder.data = _images[i * batch_size:(i + 1) * batch_size].reshape([batch_size, 28, 28, 1])
             label_placeholder.data = _labels[i * batch_size:(i + 1) * batch_size]
 
@@ -103,9 +113,10 @@ with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
             for k in var.GLOBAL_VARIABLE_SCOPE:
                 s = var.GLOBAL_VARIABLE_SCOPE[k]
                 if isinstance(s, var.Variable) and s.learnable:
-                    s.apply_gradient(learning_rate=learning_rate, decay_rate=0.0004)
+                    s.apply_gradient(learning_rate=learning_rate, decay_rate=0.0004, batch_size=batch_size)
                 if isinstance(s, var.Variable):
                     s.diff = np.zeros(s.shape)
+                global_step += 1
 
 
             if i % 50 == 0 and i!= 0:
@@ -114,16 +125,14 @@ with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
                                                                                                      i, batch_acc / float(
                               batch_size), batch_loss / batch_size, learning_rate)
                 logf.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + \
-                          "  %s epoch: %d ,  batch: %5d , avg_batch_acc: %.4f  avg_batch_loss: %.4f  learning_rate %f" % (VERSION,epoch,
+                          "  %s epoch: %d ,  batch: %5d , avg_batch_acc: %.4f  avg_batch_loss: %.4f  learning_rate %f\n" % (VERSION,epoch,
                                                                                                      i, batch_acc / float(
                               batch_size), batch_loss / batch_size, learning_rate))
                 loss_collect.append(batch_loss / batch_size)
                 acc_collect.append(batch_acc / float(batch_size))
 
-
             batch_loss = 0
             batch_acc = 0
-
 
         print time.strftime("%Y-%m-%d %H:%M:%S",
                                 time.localtime()) + "  epoch: %5d , train_acc: %.4f  avg_train_loss: %.4f" % (
