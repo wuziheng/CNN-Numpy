@@ -89,7 +89,7 @@
 
 <center>
 
-<img src="fig/activation-loss1.jpg" style="zoom:100%"/>  <img src="fig/activation-loss2.jpg" style="zoom:100%"/>
+<img src="fig/activation-loss1.jpg" style="zoom:100%"/>      <img src="fig/activation-loss2.jpg" style="zoom:100%"/>
 
 </center>
 
@@ -106,17 +106,26 @@
 * method: sgd, momentum ,Nesterov, Adam ,RMSProp 等进行比对
 * initializer: MSRA,  Xavier, Zeros, Const
 
-ps:注意到之前的版本apply_gradient，diff都没有/batch_size,从这个版本添加上了.这样就收敛速度就不会显式的受到batch_size的影响(这个地方还是需要思考一下，因为从epoch角度来讲，不除比较稳定)。当然我就把初始learning_rate调大了50倍．同时，添加了util.learning_rate_decay,用于让学习率自动衰减.
+ps:注意到之前的版本apply_gradient，diff都没有/batch_size,从这个版本添加上了.这样就收敛速度就不会显式的受到batch_size的影响(这个地方还是需要思考一下，因为从epoch角度来讲，不除比较稳定)。当然我就把初始learning_rate调大了50倍．同时，添加了util.learning_rate_decay,用于让学习率自动衰减,然而效果呵呵呵
+
+～
+
+**2018.02.01**
+
+*method test on mnist*
 
 | *learning_rate* | *batch_size* | *decay_rate* | *decay_epoch* | *initializer* |
 | :-------------: | :----------: | :----------: | :-----------: | :-----------: |
 |      5e-4       |      64      |     0.1      |       5       |     MSRA      |
 
-| version  |      |      |      |      |
-| :------: | ---- | ---- | ---- | ---- |
-|   SGD    |      |      |      |      |
-| Momentum |      |      |      |      |
-| Nesterov |      |      |      |      |
-|   Adam   |      |      |      |      |
+| version  | val_acc(epoch1) | epoch2 | epoch3 | epoch4 | epoch4 |
+| :------: | :-------------: | :----: | :----: | :----: | :----: |
+|   SGD    |     92.66%      | 95.83% | 96.88% | 97.09% | 96.76% |
+| Momentum |     92.12%      | 94.87% | 96.19% | 96.81% | 97.16% |
+| Nesterov |     91.01%      | 94.90% | 96.45% | 96.76% | 97.11% |
+|   Adam   |     91.73%      | 95.19% | 96.29% | 96.98% | 97.07% |
 
-这里我们也一样比较了几种method在LRELU下的表现，由于初始化是随机的＋网络很浅，所以好像差别也不是特别明显，没有activation之间表现的差距那么明显。之后可能会在更深的网络上进行测试把。
+这里我们也一样比较了几种method在LRELU下的表现，由于初始化是随机的＋网络很浅，所以好像差别也不是特别明显，没有activation之间表现的差距那么明显。之后可能会在更深的网络上进行测试把,而且之后需要间隔短一点测试val。图片看起来很波动一方面在于gradient descent本来就是这样下降的，另外可能是记录的间隔有点尴尬。
+
+<img src="fig/method-loss.jpg" style="zoom:100%"/>     <img src="fig/method-acc.jpg" style="zoom:100%"/>
+

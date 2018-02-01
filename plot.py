@@ -28,7 +28,7 @@ if __name__ == "__main__":
     from glob import glob
     filelist = glob('logs/*.txt')
     print filelist
-    moving_alpha = 0.8
+    moving_alpha = 0.9
 
     plt.figure(figsize=(4,3))
 
@@ -48,16 +48,16 @@ if __name__ == "__main__":
         loss = loss[0:101]
         loss = [loss[i] * moving_alpha + loss[i + 1] * (1 - moving_alpha) for i in
                       range(len(loss) - 1)]
-        acc = acc[0:50]
+        acc = acc[0:101]
         acc = [acc[i] * moving_alpha + acc[i + 1] * (1 - moving_alpha) for i in
                       range(len(acc) - 1)]
-        x = range(0,len(loss))
-        plt.plot(x,loss,label=name)
+        x = range(0,len(acc))
+        plt.plot(x,acc,label=name.split('_')[1])
 
     plt.xlabel('iteration(50batch)')
-    plt.ylabel('loss')
-    plt.ylim(0,1)
-    plt.title('loss-iteration curve')
-    plt.legend(loc='upper right')
-    plt.savefig('fig/activation-loss1.jpg',dpi=100)
+    plt.ylabel('acc')
+    # plt.ylim(0,1)
+    plt.title('acc-iteration curve')
+    plt.legend(loc='lower right')
+    plt.savefig('fig/method-acc.jpg',dpi=100)
     plt.show()
