@@ -21,5 +21,5 @@ def learning_rate_exponential_decay(learning_rate, global_step, decay_rate=0.1, 
     :return: learning rate decayed by step
     '''
 
-    decayed_learning_rate = learning_rate * pow(decay_rate,float(global_step/decay_steps))
+    decayed_learning_rate = learning_rate * pow(decay_rate , float(global_step/decay_steps))
     return decayed_learning_rate

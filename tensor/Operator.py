@@ -262,8 +262,6 @@ class FullyConnect(Operator):
             return
 
 
-
-
 class SoftmaxLoss(Operator):
     def __init__(self, predict = Variable, label=Variable, name=str):
         self.batch_size = predict.shape[0]
@@ -315,6 +313,51 @@ class SoftmaxLoss(Operator):
             exp_prediction[i] = np.exp(prediction[i])
             self.softmax[i] = exp_prediction[i]/np.sum(exp_prediction[i])
         return self.softmax
+
+
+class DropOut(Operator):
+    def __init__(self, name, phase, input_variable=Variable, prob=0.5):
+        self.input_variables = input_variable
+        self.output_variables = Variable(shape=input_variable.shape, scope=name, name='out')
+        self.prob = prob
+        self.phase = phase
+        self.index = np.ones(input_variable.shape)
+
+        Operator.__init__(self, name, self.input_variables, self.output_variables)
+
+    def forward(self):
+        if self.wait_forward:
+            for parent in self.parent:
+                GLOBAL_VARIABLE_SCOPE[parent].eval()
+            if self.phase == 'train':
+                self.index = np.random.random(self.input_variables.shape) < self.prob
+                self.output_variables.data = self.input_variables.data * self.index
+                self.output_variables.data /= self.prob
+            elif self.phase == 'test':
+                self.output_variables.data = self.input_variables.data
+            else:
+                raise Exception('Operator %s phase is not in test or train'% self.name)
+
+            self.wait_forward=False
+            return
+        else:
+            pass
+
+    def backward(self):
+        if self.wait_forward:
+            pass
+        else:
+            for child in self.child:
+                GLOBAL_VARIABLE_SCOPE[child].diff_eval()
+            if self.phase == 'train':
+                self.input_variables.diff = self.output_variables.diff * self.index / self.prob
+            elif self.phase == 'test':
+                self.output_variables.diff = self.input_variables.diff
+            else:
+                raise Exception('Operator %s phase is not in test or train'% self.name)
+
+            self.wait_forward = True
+            return
 
 
 def register_graph(input_variable, output_variable, operator):

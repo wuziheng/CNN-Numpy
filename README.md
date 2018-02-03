@@ -118,7 +118,7 @@ ps:注意到之前的版本apply_gradient，diff都没有/batch_size,从这个�
 | :-------------: | :----------: | :----------: | :-----------: | :-----------: |
 |      5e-4       |      64      |     0.1      |       5       |     MSRA      |
 
-| version  | val_acc(epoch1) | epoch2 | epoch3 | epoch4 | epoch4 |
+| version  | val_acc(epoch1) | epoch2 | epoch3 | epoch4 | epoch5 |
 | :------: | :-------------: | :----: | :----: | :----: | :----: |
 |   SGD    |     92.66%      | 95.83% | 96.88% | 97.09% | 96.76% |
 | Momentum |     92.12%      | 94.87% | 96.19% | 96.81% | 97.16% |
@@ -128,4 +128,8 @@ ps:注意到之前的版本apply_gradient，diff都没有/batch_size,从这个�
 这里我们也一样比较了几种method在LRELU下的表现，由于初始化是随机的＋网络很浅，所以好像差别也不是特别明显，没有activation之间表现的差距那么明显。之后可能会在更深的网络上进行测试把,而且之后需要间隔短一点测试val。图片看起来很波动一方面在于gradient descent本来就是这样下降的，另外可能是记录的间隔有点尴尬。
 
 <img src="fig/method-loss.jpg" style="zoom:100%"/>     <img src="fig/method-acc.jpg" style="zoom:100%"/>
+
+~
+
+**2018.02.02**
 
