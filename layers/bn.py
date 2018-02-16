@@ -7,7 +7,7 @@ class BatchNorm(object):
         self.batch_size = shape[0]
         self.input_data = np.zeros(shape)
 
-        self.alpha = np.zeros(shape[-1])
+        self.alpha = np.ones(shape[-1])
         self.beta = np.zeros(shape[-1])
         self.a_gradient = np.zeros(shape[-1])
         self.b_gradient = np.zeros(shape[-1])
@@ -57,3 +57,23 @@ class BatchNorm(object):
         self.alpha -= alpha * self.a_gradient
         self.beta -= alpha * self.b_gradient
 
+        
+if __name__ == "__main__":
+    shape = [12,3]
+    bn = BatchNorm(shape)
+    print 'batch:', bn.batch_size
+
+    a = np.random.random(shape)
+    epsilon = 1e-4
+
+    out1 = bn.forward(a+epsilon)
+    out2 = bn.forward(a-epsilon)
+    # print bn.mean
+    # print bn.var
+    # print bn.moving_mean
+    # print bn.moving_var
+    # print bn.mean.shape
+    print out1
+    # print (out1-out2)/(2*epsilon)
+
+    print bn.gradient(np.ones(shape))

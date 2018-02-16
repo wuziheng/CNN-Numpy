@@ -128,6 +128,7 @@ class Conv2D(Operator):
 
         col_pad_eta = np.array([im2col(pad_eta[i][np.newaxis, :], self.ksize, self.stride) for i in range(self.batch_size)])
         flip_weights = np.flipud(np.fliplr(weights.data))
+        flip_weights = flip_weights.swapaxes(2,3)
         col_flip_weights = flip_weights.reshape([-1, weights.shape[2]])
         next_eta = np.dot(col_pad_eta, col_flip_weights)
         next_eta = np.reshape(next_eta, input.shape)

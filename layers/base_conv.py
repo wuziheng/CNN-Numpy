@@ -46,7 +46,6 @@ class Conv2D(object):
         for i in range(self.batchsize):
             img_i = x[i][np.newaxis, :]
             self.col_image_i = im2col(img_i, self.ksize, self.stride)
-            #print self.col_image_i.shape
             conv_out[i] = np.reshape(np.dot(self.col_image_i, col_weights) + self.bias, self.eta[0].shape)
             self.col_image.append(self.col_image_i)
         self.col_image = np.array(self.col_image)
@@ -71,9 +70,9 @@ class Conv2D(object):
                 (0, 0), (self.ksize / 2, self.ksize / 2), (self.ksize / 2, self.ksize / 2), (0, 0)),
                              'constant', constant_values=0)
 
-        col_pad_eta = np.array([im2col(pad_eta[i][np.newaxis, :], self.ksize, self.stride) for i in range(self.batchsize)])
         flip_weights = np.flipud(np.fliplr(self.weights))
         col_flip_weights = flip_weights.reshape([-1, self.input_channels])
+        col_pad_eta = np.array([im2col(pad_eta[i][np.newaxis, :], self.ksize, self.stride) for i in range(self.batchsize)])
         next_eta = np.dot(col_pad_eta, col_flip_weights)
         next_eta = np.reshape(next_eta, self.input_shape)
         return next_eta

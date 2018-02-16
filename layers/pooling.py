@@ -12,6 +12,13 @@ class AvgPooling(object):
         self.integral = np.zeros(shape)
         self.index = np.zeros(shape)
 
+    def gradient(self, eta):
+        # stride = ksize
+        next_eta = np.repeat(eta, self.stride, axis=1)
+        next_eta = np.repeat(next_eta, self.stride, axis=2)
+        next_eta = next_eta*self.index
+        return next_eta/(self.ksize*self.ksize)
+
     def forward(self, x):
         for b in range(x.shape[0]):
             for c in range(self.output_channels):
@@ -55,12 +62,7 @@ class AvgPooling(object):
         out /= (self.ksize * self.ksize)
         return out
 
-    def gradient(self, eta):
-        # stride = ksize
-        next_eta = np.repeat(eta, self.stride, axis=1)
-        next_eta = np.repeat(next_eta, self.stride, axis=2)
-        next_eta = next_eta*self.index
-        return next_eta/(self.ksize*self.ksize)
+
 
 
 class MaxPooling(object):

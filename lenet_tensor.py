@@ -10,7 +10,7 @@ import struct
 from glob import glob
 import os
 
-VERSION = 'TENSOR_Adam_Dropout0.7_RELU'
+VERSION = 'TENSOR_Adam_RELU'
 
 
 def load_mnist(path, kind='train'):
@@ -36,13 +36,13 @@ def load_mnist(path, kind='train'):
 def inference(x, output_num):
     conv1_out = op.Conv2D((5, 5, 1, 12), input_variable=x, name='conv1', padding='VALID').output_variables
     relu1_out = activation.Relu(input_variable=conv1_out, name='relu1').output_variables
-    dropout1_out = op.DropOut(input_variable=relu1_out, name='dropout1', phase='train', prob=0.7).output_variables
-    pool1_out = op.MaxPooling(ksize=2, input_variable=dropout1_out, name='pool1').output_variables
+    #dropout1_out = op.DropOut(input_variable=relu1_out, name='dropout1', phase='train', prob=0.7).output_variables
+    pool1_out = op.MaxPooling(ksize=2, input_variable=relu1_out, name='pool1').output_variables
 
     conv2_out = op.Conv2D((3, 3, 12, 24), input_variable=pool1_out, name='conv2').output_variables
     relu2_out = activation.Relu(input_variable=conv2_out, name='relu2').output_variables
-    dropout2_out = op.DropOut(input_variable=relu2_out, name='dropout2', phase='train', prob=0.7).output_variables
-    pool2_out = op.MaxPooling(ksize=2, input_variable=dropout2_out, name='pool2').output_variables
+    #dropout2_out = op.DropOut(input_variable=relu2_out, name='dropout2', phase='train', prob=0.7).output_variables
+    pool2_out = op.MaxPooling(ksize=2, input_variable=relu1_out, name='pool2').output_variables
 
     fc_out = op.FullyConnect(output_num=output_num, input_variable=pool2_out, name='fc').output_variables
     return fc_out
@@ -70,7 +70,7 @@ test_images, test_labels = load_mnist('./data/mnist', 't10k')
 # save train curve config
 loss_collect = []
 acc_collect = []
-
+print 'new'
 with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
     for epoch in range(20):
         # random shuffle
@@ -154,7 +154,7 @@ with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
                     s.wait_bp = False
                 if isinstance(s, op.Operator):
                     s.wait_forward = True
-                if isinstance(s,op.Operator) and s.__getattribute__('phase') == 'train':
+                if isinstance(s,op.Operator) and hasattr(s,'phase'): #== 'train':
                     s.phase = 'test'
 
             _loss = sf.loss.eval()
@@ -171,5 +171,5 @@ with open('logs/%s_log.txt'%VERSION, 'wb') as logf:
 
         for k in var.GLOBAL_VARIABLE_SCOPE:
             s = var.GLOBAL_VARIABLE_SCOPE[k]
-            if isinstance(s, op.Operator) and s.__getattribute__('phase') == 'test':
+            if isinstance(s, op.Operator) and hasattr(s,'phase') :#== 'test':
                 s.phase = 'train'
