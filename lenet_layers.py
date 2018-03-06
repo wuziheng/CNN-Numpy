@@ -34,51 +34,6 @@ def load_mnist(path, kind='train'):
 images, labels = load_mnist('./data/mnist')
 test_images, test_labels = load_mnist('./data/mnist', 't10k')
 
-# img = images[0].reshape([1,28,28,1])
-# # plt.imshow(img[0,:,:,0])
-# # plt.show()
-#
-# conv1 = conv2d(img.shape, 12, 5, 1)
-# conv1_out = conv1.forward(img)
-# print 'conv1_out: ', conv1_out.shape
-#
-# pool1 = max_pooling(conv1_out.shape)
-# pool1_out = pool1.forward(conv1_out)
-# print 'pool1_out: ', pool1_out.shape
-#
-# conv2 = conv2d(pool1_out.shape, 24, 3, 1)
-# conv2_out = conv2.forward(pool1_out)
-# print 'conv2_out: ', conv2_out.shape
-#
-# pool2 = max_pooling(conv2_out.shape)
-# pool2_out = pool2.forward(conv2_out)
-# print 'pool2_out: ', pool2_out.shape
-#
-# fc = fullyconnect(pool2_out.shape, 10)
-# fc_out = fc.forward(pool2_out)
-# print 'fc_out:', fc_out.shape
-#
-# sf = softmax(fc_out.shape)
-# sf.cal_loss(fc_out, 5)
-# sf.gradient()
-# print '------------------------------------'
-# print 'softmax_eta: ', sf.eta.shape
-#
-# fc_eta = fc.gradient(sf.eta)
-# print 'fc_eta: ', fc_eta.shape
-#
-# pool2_eta = pool2.gradient(fc_eta)
-# print 'pool2_eta: ', pool2_eta.shape
-#
-# conv2_eta = conv2.gradient(pool2_eta)
-# print 'conv2_eta: ', conv2_eta.shape
-#
-# pool1_eta = pool1.gradient(conv2_eta)
-# print 'pool1_eta: ', pool1_eta.shape
-#
-# conv1_eta = conv1.gradient(pool1_eta)
-# print 'conv1_eta', conv1_eta.shape
-
 batch_size = 64
 
 conv1 = Conv2D([batch_size, 28, 28, 1], 12, 5, 1)
@@ -122,8 +77,6 @@ for epoch in range(20):
         conv2_out = relu2.forward(conv2.forward(pool1_out))
         pool2_out = pool2.forward(conv2_out)
         fc_out = fc.forward(pool2_out)
-        # print i, 'fc_out', fc_out
-        print 'loss:', sf.cal_loss(fc_out, np.array(label))
         batch_loss += sf.cal_loss(fc_out, np.array(label))
         train_loss += sf.cal_loss(fc_out, np.array(label))
 
@@ -141,7 +94,6 @@ for epoch in range(20):
             fc.backward(alpha=learning_rate, weight_decay=0.0004)
             conv2.backward(alpha=learning_rate, weight_decay=0.0004)
             conv1.backward(alpha=learning_rate, weight_decay=0.0004)
-
 
             if i % 50 == 0:
                 print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + \

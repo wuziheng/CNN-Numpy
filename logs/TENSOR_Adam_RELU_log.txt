@@ -1,0 +1,2 @@
+2018-03-06 10:15:39  TENSOR_Adam_RELU epoch: 0 ,  batch:    50 , avg_batch_acc: 0.7969  avg_batch_loss: 2.4704  learning_rate 0.000500
+2018-03-06 10:16:32  TENSOR_Adam_RELU epoch: 0 ,  batch:   100 , avg_batch_acc: 0.7812  avg_batch_loss: 1.2912  learning_rate 0.000500

@@ -71,6 +71,7 @@ class Conv2D(object):
                              'constant', constant_values=0)
 
         flip_weights = np.flipud(np.fliplr(self.weights))
+        flip_weights = flip_weights.swapaxes(2, 3)
         col_flip_weights = flip_weights.reshape([-1, self.input_channels])
         col_pad_eta = np.array([im2col(pad_eta[i][np.newaxis, :], self.ksize, self.stride) for i in range(self.batchsize)])
         next_eta = np.dot(col_pad_eta, col_flip_weights)
@@ -88,18 +89,6 @@ class Conv2D(object):
         self.b_gradient = np.zeros(self.bias.shape)
 
 
-# def im2col(image, ksize, stride):
-#     # image is a 4d tensor([batchsize, width ,height, channel])
-#     img = []
-#     for b in range(image.shape[0]):
-#         per_image_col = []
-#         for i in range(0, image.shape[1] - ksize + 1, stride):
-#             for j in range(0, image.shape[2] - ksize + 1, stride):
-#                 col = image[0, i:i + ksize, j:j + ksize, :].reshape([-1])
-#                 per_image_col.append(col)
-#         per_image_col = np.array(per_image_col)
-#         img.append(per_image_col)
-#     return np.array(img)
 
 def im2col(image, ksize, stride):
     # image is a 4d tensor([batchsize, width ,height, channel])
